@@ -12,6 +12,6 @@ public class ReplaceReArrangeNoAdjacentChar {
     public static int alternatingCharacters(String s) {
         List<String> listA = new ArrayList<>();
         List<String> listB = new ArrayList<>();
-        
+        return 0;
     }
 }

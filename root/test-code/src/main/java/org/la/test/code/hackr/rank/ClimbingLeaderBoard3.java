@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 //  TODO have to complete this task using recursion
 
 
-public class ClimbingLeaderBoard2 {
+public class ClimbingLeaderBoard3 {
 
 
 
@@ -21,8 +21,7 @@ public class ClimbingLeaderBoard2 {
         //player = new ArrayList<>(Arrays.asList(50, 65, 77, 90, 102));
         //result above [6, 5, 4, 2, 1]
         ranked = new ArrayList<>(Arrays.asList(100, 90, 90, 80, 75, 60));
-        player = new ArrayList<>(Arrays.asList(40, 65, 77, 90, 110));
-        //[6, 4, 3, 2, 1]
+        player = new ArrayList<>(Arrays.asList(40, 65, 77, 90, 99));
         List<Integer> integers = climbingLeaderboard(ranked, player);
         System.out.println("result: "+integers);
     }
@@ -38,71 +37,81 @@ public class ClimbingLeaderBoard2 {
             i[0] = i[0] - 1;
             rankMap.put(e, i[0]);
         });
-        rmi = 0;
-        pi = 0;
+        int rmi = 0;
+        int pi = 0;
+        int rkey = (int) rankMap.keySet().toArray()[rmi];
+        int playerVal = playerList.get(pi);
+        int rankValue = rankMap.get(rkey);
+        if(playerVal<rkey){
+            result.add(rankValue+1);
+        }
+        else if(playerVal==rkey){
+            result.add(rankValue);
+        }
+        else{
+            result.add(rankValue-1);
+        }
+        rmi++;
+        pi++;
+
         for( ; pi<playerList.size() ; ){
             if(rmi<rankMap.size()) {
-                int rkey = (int) rankMap.keySet().toArray()[rmi];
-                int playerVal = playerList.get(pi);
-                if (playerVal < rkey){
-                    result.add(reverse(playerList, rkey, rankMap.get(rkey), result));
-                    //reverse(playerList, rkey, rankMap.get(rkey), result);
+                rkey = (int) rankMap.keySet().toArray()[rmi];
+                rankValue = rankMap.get(rkey);
+                playerVal = playerList.get(pi);
+                if(playerVal<rkey){
+                    result.add(rankValue+1);
+                    rmi++;
+                    pi++;
                 }
-                else if(playerList.get(pi)==rkey){
-                    result.add(rankMap.get(rkey));
+                else if(playerVal==rkey){
+                    result.add(rankValue);
                     rmi++;
                     pi++;
                 }
                 else {
-                    result.add(forward(playerList.get(pi), rankMap));
-                    //forward(playerList.get(pi), rankMap);
+                    rmi++;
                 }
-                //rmi++;
+
             }
             else{
                 break;
             }
         }
+        playerVal = playerList.get(playerList.size()-1);
+        rkey = (int)rankMap.keySet().toArray()[rankMap.size()-1];
+        rankValue = rankMap.get(rkey);
+        if(playerVal==rkey){
+            result.add(rankValue);
+        }
+        else if(playerVal>rkey){
+            result.add(1);
+        }
         return result;
     }
+
     static int rmi;
     static int forward(int playerRank, Map<Integer, Integer> rankMap){
-
         int rankKey = (int)rankMap.keySet().toArray()[rmi];
         int rankValue = rankMap.get(rankKey);
         if(rankValue==1){
-            rmi++;
-            pi++;
             return 1;
         }
-        int advRankKey = (int)rankMap.keySet().toArray()[rmi+1];
-        if(playerRank>advRankKey){
+        if(playerRank>rankKey){
             rmi++;
             return forward(playerRank, rankMap);
         }
-        else if(playerRank==rankKey){
-            rmi++;
-            pi++;
-            return rankValue;
-        }
-        else{
-            pi++;
-        }
-        return rankValue-1;
+        return rankValue+1;
     }
     static int pi;
     static int reverse(List<Integer> player, int rankKey, int rankValue, List<Integer> result){
-        if(player.get(pi+1)<rankKey){
+        if(player.get(pi)<rankKey){
             pi++;
-            //if(pi<player.size()){
-            rankValue = reverse(player, rankKey, rankValue+1, result);
-            //}
+            if(pi<player.size()){
+                result.add(reverse(player, rankKey, rankValue+1, result));
+            }
         }
-        else{
-            //rmi++;
-            pi++;
-        }
-        return rankValue+1;
+        return rankValue;
     }
 
 }

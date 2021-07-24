@@ -2115,9 +2115,111 @@ create an object of each class. What will be the output and why?
 the Shape class, both having a method to print "This is rectangular shape" and "This is circular shape" respectively. 
 Create a class 'Square' extending 'Rectangle' with a method to print "Square is a rectangle".
 Now call the method of 'Shape' and 'Rectangle' class by the object of 'Square' class.
-		
 
-		
+
+	--------------------------------------------------------------------------------------	
+
+Collection
+
+1.	Convert integer array to integer list
+	int[] a = {1, 2, 3, 4, 5, 6, 7, 8};
+	
+2.	Convert String to char array
+	String s = "Hello, Hi, How are you"
+	
+3.	Convert char array to String
+	char[] a = {'a', 'd, 'c', 'b', 'a', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+
+4.	Convert char array to char list 
+	char[] a = {'a', 'd, 'c', 'b', 'a', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+	
+5.	Convert char array to char list and but dont copy character 'a' to list
+	char[] a = {'a', 'd, 'c', 'b', 'a', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+
+6.	Convert integer array to String list
+	int[] a = {1, 2, 3, 4, 5, 6, 7, 8};
+
+7.	Convert String list to integer list
+	List<String> stringList = Arrays.asList(new String[]{"123", "12", "35", "54", "66", "77", "55", "221", "33"});
+	
+8.	Create a new String list and add these two list to newly created string list. 
+	List<String> stringList = Arrays.asList(new String[]{"123", "12", "35", "54", "66", "77", "55", "221", "33"});
+	List<String> stringList = Arrays.asList(new String[]{"123", "j", "1", "*", "a", "j", "dd", "a", "a"});
+
+9.	Please read about Collections and Arrays util class.
+
+10.	Difference between Collections and Collection ?
+
+11. What is link list?
+
+12. LinkList vs ArrayList?
+13.	When will use LinkList and when we will use ArrayList ?
+14.	Create a set of String 
+15.	Create a set of character
+16. Create a set of boolean
+17. Create a set of float 
+18. Create a set of int
+19.	Describe Set internal implementation ?
+20. Create a map of key int and value also int
+21.	Create a map of key int and value String
+22.	Create a map of key String and value also String	
+23.	Create a map of key String and value int
+24.	Create a map of key int and value char
+25.	Create a map of key char and value int
+26.	Create a model class (POJO), name of the class: Student having two member fields id and name.
+	Create two constructor 1. zero parameter constructor, 2. 2 arguments constructor 
+	Create a list of Student class then sort the list once using id and once using name separately.
+	For sorting please try to use both way of comparator implemention
+	1. Class will implement comparator interface and will override using name and id respectively
+	2. Using lambda function 
+	
+27. Create a model class (POJO), name of the class: Employee having two member fields designation and name.
+	Create two constructor 1. zero parameter constructor, 2. 2 arguments constructor 
+	Create a list of Student class then sort the list once using designation and once using name separately.
+	For sorting please try to use both way of comparator implemention
+	1. Class will implement comparator interface and will override using name and designation respectively
+	2. Using lambda function 
+
+28.	Create a model class (POJO), name of the class: User having two member fields userId and email.
+	Create two constructor 1. zero parameter constructor, 2. 2 arguments constructor 
+	Create a list of Student class then sort the list once using userId and once using email separately.
+	For sorting please try to use both way of comparator implemention
+	1. Class will implement comparator interface and will override using email and userId respectively
+	2. Using lambda function 
+
+29.	Create a model class (POJO), name of the class: ProjectManager having two member fields project and team.
+	Create two constructor 1. zero parameter constructor, 2. 2 arguments constructor 
+	Create a list of ProjectManager class then sort the list once using project and once using team separately.
+	For sorting please try to use both way of comparator implemention
+	1. Class will implement comparator interface and will override using team and project respectively
+	2. Using lambda function 
+
+30.	Create a model class (POJO), name of the class: Book having two member fields author and subject.
+	Create two constructor 1. zero parameter constructor, 2. 2 arguments constructor 
+	Create a list of Book class then sort the list once using author and once using subject separately.
+	For sorting please try to use both way of comparator implemention
+	1. Class will implement comparator interface and will override using subject and author respectively
+	2. Using lambda function 
+
+31.	What is hash ?
+32.	Methods inside Object class specially equal and hash method, and toString method.
+33. Can we use our class as a key in map ?
+34. If yes then what would be the criteria to make a class suitable for key in map ?
+35. Difference between hashmap and hashtable
+36. Difference between array and arraylist 
+
+37.	Create a list not having duplicate values from given list 
+	List<Integer> ss = Arrays.asList(new Integer[]{1, 2, 3, 5, 5, 1, 0, -1, -2, -3, 1, 0, -1, -3});
+
+38. Create a list not having duplicate values from given list
+	List<String> stringList = Arrays.asList(new String[]{"abc", "xyz", "abcd", "abc", "hello", "world", "bike", "ant", "world"});
+
+39. Create a list not having duplicate values from given list
+	List<Character> ss = Arrays.asList(new Character[]{'1', '2', '2', '2', '@', '#', 'O', 'o', '0', '3', '1', '?', '*', 'o', 'e'});
+40. Create a list not having duplicate values from given list
+	List<Double> ss = Arrays.asList(new Double[]{4.5, 3.2, 6.5, 99.0, 33.21, 5.53, 4.33, 4.5, 3.2, 6.5, 1.1, 1.2, 4.4});
+	
+	--------------------------------------------------------------------------------------
 		
 JDBC:
 	company ( company_id, name, description, primary_contact_attendee_id)

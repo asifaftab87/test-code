@@ -1,4 +1,4 @@
-Data type
+Data type :
 	what will be size, type and default value of these variables?
 		int,
 		double,
@@ -9,7 +9,6 @@ Data type
 		boolean,
 		char
 
-Data Type:
 	wap to create and print an int variable?
 	wap to create and print a char variable?
 	wap to create and print a float variable?
@@ -20,6 +19,7 @@ Data Type:
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Type Casting:
@@ -40,6 +40,7 @@ Type Casting:
 		
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 	
 Arithmetic Operation
@@ -157,6 +158,7 @@ Arithmetic Operation
 	
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Post/Pre Increment/Decrement
@@ -246,6 +248,7 @@ Post/Pre Increment/Decrement
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Relational Operator:
@@ -376,6 +379,7 @@ Relational Operator:
 		
 		
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Logical operation
@@ -528,6 +532,7 @@ Logical operation
 		System.out.println("a = " + a + " b = " + b + " c = " + c);
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 Ternary:
 	1.	wap to print greatest number among two given numbers( with if and without if).
@@ -539,6 +544,7 @@ Ternary:
 	
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 	
 if-else
@@ -778,6 +784,7 @@ if-else
 	
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 	
 for/while loop
@@ -920,6 +927,7 @@ for/while loop
 	Number pattern programs - Wap to print the given number patterns.
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Array
@@ -1007,21 +1015,60 @@ Array
 		
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 	
 String 
-	How to compare strings?
-	How to search last occurance of a substring inside a substring?
-	How to remove a particular character from a string?
-	How to replace a substring inside a string by another one ?
-	How to reverse a String?
-	How to search a word inside a string?
-	How to split a string into a number of substrings using space?
-	How to convert a string totally into upper case?
-	How to concatenate two strings?
+	1.	How to compare strings?
+	2.	How to search last occurance of a substring inside a substring?
+	3.	How to remove a particular character from a string?
+	4.	How to replace a substring inside a string by another one ?
+	5.	How to reverse a String?
+	6.	How to search a word inside a string?
+	7.	How to split a string into a number of substrings using space?
+	8.	How to convert a string totally into upper case?
+	9.	How to concatenate two strings?
 
-
+	10.	WAP program to reverse word based on space
+		a.	IP -   Hello world how are you
+			OP -   you are how world Hello
+		b.	IP -   Good morning
+			OP -   morning Good
+		c.  IP -   who is this
+			OP -   this is who
+	
+	11.	Wap to convert String to char array 
+	12.	Wap to convert char array to String
+	13. Wap to remove all spaces from a string
+	14. Wap to remove spaces those are present at starting and ending of a String
+	15.	Wap to remove all integers from a String 
+	16.	Wap to remove start from a String
+	17.	Wap to remove all special characters from String(Note: accept alphabets lower case or upper case 
+		all other characters are special characters). 
+	18.	https://soshace.com/top-20-java-string-interview-questions-and-answers/
+	19.	Wap to count each character except space
+	20.	Wap to count the total number of vowels and consonants in a string
+	21.	Wap to determine whether two strings are the anagram
+	22.	Wap to divide String in 3 equal parts
+		String s = "aaabbbccc";
+	23.	Wap to remove all lower case letters
+		String s = "aAzZXYcFEDgHIjklMNppc";
+	24.	Wap to remove all upper case letters
+		String s = "aAzZXYcFEDgHIjklMNppc";
+	25.	Wap to determine whether a given string is palindrome
+	26. Wap to remove duplicate characters
+		String s = "abacddeffi";
+		OP : "abcdefi"
+	27.	Wap to convert String to int
+	28. Wap to convert int to String
+	29.	Wap to convert String to long
+	30.	Wap to convert long to String
+	31. Wap to convert String to float
+	32.	Wap to convert float to String
+	33. Wap to convert String to double
+	34.	Wap to convert double to String
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 	
 	
 Method
@@ -1136,11 +1183,6 @@ public class SumTwoNumber
         return number1 + number2;
     }
 }
-
-
-
-
-
 
 
 Question 2
@@ -1592,6 +1634,7 @@ public class PrimeNumbers
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 			
 
 Class:
@@ -1694,8 +1737,42 @@ Class:
 	
 	
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
+
 	
-ArrayList:
+	
+Date :
+	1.	Wap to create and print java.util.Date object;
+	2.	Wap to create and print java.sql.Date object;
+	3.	Wap to convert java.util.Date to java.util.Date object;
+	4.	Wap to convert String to Date
+	5.	Wap to convert Date to String
+	6.	Wap to get year from current date https://www.javatpoint.com/java-date-getyear-method
+	7.	Wap to create LocalDateTime and print its value
+	8.	Wap to convert LocalDateTime to MM-dd-yyyy String format and print
+	9.	Wap to convert LocalDateTime to dd-MM-yyyy String format and print
+	10.	Wap to convert LocalDateTime to MM/dd/yyyy String format and print
+	11.	Wap to convert LocalDateTime to dd/MM/yyyy String format and print
+	12.	Wap to convert String stringDate = "31/12/1998"; to Date object.
+	13.	Wap to convert String stringDate = "31-12-1998"; to Date object.	
+	14.	Wap to convert String stringDate = "12/31/1998"; to Date object.
+	15.	Wap to convert String stringDate = "12-31-1998"; to Date object.
+	16. Wap to find the difference in days, months and years between two dates
+		String sd1 = "31/12/1998";
+		String sd2 = "31/12/1990";
+	17. Wap to find the difference in days, months and years between two dates
+		String sd1 = "01/02/1990";
+		String sd2 = "17/01/2000";
+	18. Wap to find the difference in days, months and years between two dates
+		String sd1 = "13/10/1987";
+		String sd2 = "11/08/1999";
+	
+	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
+
+	
+
+ArrayList :
 	1.	create a class User having fields id, name, dob, email. Create an array list of User class and 
 		add 5 user objects inside the list.
 
@@ -1746,6 +1823,8 @@ ArrayList:
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
+
 
 Model and Dto class
 	1.	create a model class User having fields id, name, dob, email
@@ -1803,6 +1882,7 @@ Model and Dto class
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 
 Abstract class:
@@ -1830,6 +1910,7 @@ Abstract class:
 
 
 	-------------------------------------------------------------------------------------------------------
+				-------------------------------------------------------------------------------------------------------
 
 Interface:
 	implement these interfaces 

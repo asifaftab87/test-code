@@ -1,20 +1,17 @@
 package org.la.core.java.student.jdbc.respository;
 
-import org.la.core.java.student.jdbc.model.Address;
 import org.la.core.java.student.jdbc.model.User;
 import org.la.core.java.student.jdbc.service.AddressService;
 import org.la.core.java.student.jdbc.util.ConnectionUtil;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Connection;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class UserRepository {
@@ -41,7 +38,7 @@ public class UserRepository {
         List<User> userList = new ArrayList<>();
 
         try {
-            String query = "select * from user where age >=?";
+            String query = "select * from user where age =?";
             pStatement = connection.prepareStatement(query);
             pStatement.setInt(1, age);
 

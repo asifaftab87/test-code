@@ -3,9 +3,7 @@ package org.la.core.java.student.jdbc.service;
 import org.la.core.java.student.jdbc.model.User;
 import org.la.core.java.student.jdbc.respository.UserRepository;
 
-import java.sql.Connection;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class UserService {

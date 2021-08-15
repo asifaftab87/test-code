@@ -8,28 +8,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class UserRepository {
 
     private static Connection connection = null;
     private static AddressService addressService = new AddressService();
-
-    public static List<User> findByDob(Calendar calendar) throws Exception {
-
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH) + 1;
-        int date = calendar.get(Calendar.DATE);
-        LocalDate l1 = LocalDate.of(year, month, date);
-        LocalDate now1 = LocalDate.now();
-        Period diff1 = Period.between(l1, now1);
-        System.out.println("age:" + diff1.getYears() + "years");
-        return findByAge(diff1.getYears());
-    }
 
     public static List<User> findByAge(int age) throws Exception {
         connection = ConnectionUtil.openConnection();
@@ -81,7 +66,7 @@ public class UserRepository {
             pStatement.setInt(1, id);
             rs = pStatement.executeQuery();
 
-            while (rs.next()) {
+            if (rs.next()) {
                 String name = rs.getString(2);
                 String email = rs.getString(3);
                 int age = rs.getInt(4);

@@ -22,7 +22,8 @@ public class UserRepository {
 		
 		try {		
 			String query = "Select * from user where age=?";
-			ps =  connection.prepareStatement(query, age);
+			ps =  connection.prepareStatement(query);
+			ps.setInt(1, age);
 			rs = ps.executeQuery();
 			
 			while(rs.next()) {

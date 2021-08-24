@@ -13,12 +13,19 @@
 		<servlet-name>userServlet</servlet-name>
 		<servlet-class>org.ecom.controller.UserController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userServlet</servlet-name>
 		<url-pattern>/user/list</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>studentServlet</servlet-name>
+		<servlet-class>org.ecom.controller.StudentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>studentServlet</servlet-name>
+		<url-pattern>/student/list</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>employeeServlet</servlet-name>
@@ -34,7 +41,6 @@
 		<servlet-name>CreditCardServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardServlet</servlet-name>
 		<url-pattern>/CreditCard/list</url-pattern>
@@ -44,7 +50,6 @@
 		<servlet-name>EmployeeTwoServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/list</url-pattern>
@@ -55,7 +60,6 @@
 		<servlet-name>deleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.UserDeleteController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>deleteServlet</servlet-name>
 		<url-pattern>/user/delete</url-pattern>
@@ -65,7 +69,6 @@
 		<servlet-name>employeeDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeDeleteController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeDeleteServlet</servlet-name>
 		<url-pattern>/employeeDeleteController/delete</url-pattern>
@@ -75,7 +78,6 @@
 		<servlet-name>CreditCardDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardDeleteController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardDeleteServlet</servlet-name>
 		<url-pattern>/CreditCard/Delete</url-pattern>
@@ -96,7 +98,6 @@
 		<servlet-name>createServlet</servlet-name>
 		<servlet-class>org.ecom.controller.UserCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>createServlet</servlet-name>
 		<url-pattern>/user/add</url-pattern>

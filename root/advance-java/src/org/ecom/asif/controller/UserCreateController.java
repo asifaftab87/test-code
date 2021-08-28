@@ -1,4 +1,4 @@
-package org.ecom.controller;
+package org.ecom.asif.controller;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -22,7 +22,7 @@ public class UserCreateController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "user-create.jsp";
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-create.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
 		System.out.println("user add do get");
 		requestDispatcher.forward(request, response);
@@ -82,7 +82,7 @@ public class UserCreateController extends HttpServlet {
 		userService.connectionClose();
 		
 		//to avoid form submission
-		response.sendRedirect("/advance-java/user/list");  
+		response.sendRedirect("/advance-java/user/list/asif");  
 	}
 	
 }

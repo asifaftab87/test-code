@@ -26,12 +26,12 @@
 		</div>
 		
 		<div>
-			<h2><a href="/advance-java/user/list">Users Detail</a></h2>
+			<h2><a href="/advance-java/user/list/asif">Users Detail</a></h2>
 		</div>
 		
 		<h1>Update User</h1>
 		
-		<form action="/advance-java/user/update" method="post">
+		<form action="/advance-java/user/update/asif" method="post">
 		
 		  <input type="hidden" id="userId" name="userId" value="<%= user.getId() %>" />
 		  

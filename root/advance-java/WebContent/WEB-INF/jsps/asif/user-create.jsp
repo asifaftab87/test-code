@@ -23,11 +23,11 @@
 		</div>
 		
 		<div>
-			<h2><a href="/advance-java/user/list">Users Detail</a></h2>
+			<h2><a href="/advance-java/user/list/asif">Users Detail</a></h2>
 		</div>
 		
 		<h1>Add User</h1>
-		<form action="/advance-java/user/add" method="post" id="userForm">
+		<form action="/advance-java/user/add/asif" method="post" id="userForm">
 		  <label for="fname">First name:</label><br>
 		  <input type="text" id="fname" name="fname"><br>
 		  
@@ -35,7 +35,7 @@
 		  <input type="text" id="lname" name="lname"><br>
 		  
 		  <label for="fatherName">Father Name:</label><br>
-		  <input type="text" id="fatherName" name="fatherName" onmouseover="testing();"><br>
+		  <input type="text" id="fatherName" name="fatherName"><br>
 		  
 		  <label for="dob">Date Of Birth:</label><br>
 		  <input type="text" id="datepicker" name="dob"><br>
@@ -117,6 +117,7 @@
 			
 			$(document).ready(function(){
 				console.log("page loaded/refresh");
+				/*
 			    $("#fname").keydown(function(event){
 			        var inputValue = event.which;
 			        console.log('inputValue: '+inputValue);
@@ -133,6 +134,7 @@
 			            event.preventDefault(); 
 			        }
 			    });
+			    */
 			});
 			
 			function validateEmail(email) {

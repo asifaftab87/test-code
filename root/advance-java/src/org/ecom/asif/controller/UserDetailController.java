@@ -1,5 +1,5 @@
 
-package org.ecom.controller;
+package org.ecom.asif.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -68,7 +68,7 @@ public class UserDetailController extends HttpServlet {
 			System.out.println(e.getMessage());
 		}
 		
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "user-detail.jsp";
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-detail.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
 		
 		requestDispatcher.forward(request, response); 

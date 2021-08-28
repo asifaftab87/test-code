@@ -37,7 +37,7 @@
 		</div>
 		
 		<div>
-			<h2><a href="/advance-java/user/list">Back</a></h2>
+			<h2><a href="/advance-java/user/list/asif">Back</a></h2>
 		</div>
 		
 		<h1>Update Detail</h1>

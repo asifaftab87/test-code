@@ -1,4 +1,4 @@
-package org.ecom.controller;
+package org.ecom.asif.controller;
 
 import java.io.IOException;
 
@@ -29,7 +29,7 @@ public class UserDeleteController extends HttpServlet {
 		}
 		
 		//to avoid form submission
-		response.sendRedirect("/advance-java/user/list");  
+		response.sendRedirect("/advance-java/user/list/asif");  
 	}
 	
 }

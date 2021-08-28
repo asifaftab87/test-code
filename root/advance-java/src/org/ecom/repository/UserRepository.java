@@ -25,7 +25,7 @@ public class UserRepository {	//DAO Data Access Object
 		
 		try {
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from user");
+			rs = stmt.executeQuery("select * from user1");
 			
 			if(rs!=null) {
 				
@@ -77,7 +77,7 @@ public class UserRepository {	//DAO Data Access Object
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = " select * from user where id=? ";
+			String query = " select * from user1 where id=? ";
 			pStatement = con.prepareStatement(query);
 			pStatement.setLong(1, userId);
 			rs = pStatement.executeQuery();
@@ -132,7 +132,7 @@ public class UserRepository {	//DAO Data Access Object
 			//conversion from java.util.Date to java.sql.Date
 			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
 			
-			String query = 	  "INSERT INTO user(firstName, lastName, dob, email, fatherName, gender) "
+			String query = 	  "INSERT INTO user1(firstName, lastName, dob, email, fatherName, gender, country) "
 							+ " VALUES (?, ?, ?, ?, ?, ?, ?)";
 			pStatement = con.prepareStatement(query);
 			pStatement.setString(1, user.getFirstName());
@@ -180,7 +180,7 @@ public class UserRepository {	//DAO Data Access Object
 			//conversion from java.util.Date to java.sql.Date
 			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
 			
-			String query = 	  " update user set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
+			String query = 	  " update user1 set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
 							+ " where id=? ";
 			pStatement = con.prepareStatement(query);
 			pStatement.setString(1, user.getFirstName());
@@ -225,7 +225,7 @@ public class UserRepository {	//DAO Data Access Object
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = "delete from user where id=?";
+			String query = "delete from user1 where id=?";
 			pStatement = con.prepareStatement(query);
 			pStatement.setLong(1, userId);
 			executeUpdate = pStatement.executeUpdate();
@@ -258,7 +258,7 @@ public class UserRepository {	//DAO Data Access Object
 		
 		System.out.println("name: "+name);
 		List<User> userList = new ArrayList<>();
-		String query = " select * from user where firstname like ? "; 
+		String query = " select * from user1 where firstname like ? "; 
 					 
 		Map map = new HashMap<>();
 		ResultSet rs = null;

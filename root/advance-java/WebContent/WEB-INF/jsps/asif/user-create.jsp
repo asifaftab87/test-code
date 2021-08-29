@@ -71,6 +71,7 @@
       </select>
     </div>
   	<input type="button" value="Submit" onclick="submitForm();" class="btn btn-primary">
+  	<a class="btn btn-dark mx-3" href="/advance-java/user/list/asif" role="button">Cancel</a>
 </form> 
 
 <script type="text/javascript">

@@ -11,6 +11,7 @@
 		<h1>Welcome to Users Page</h1>
 		<h2><a href="user/list">User</a></h2>
 		<h2><a href="student/list">Student</a></h2>
+		<h2><a href="team/list">Team</a></h2>
 		<h2><a href="employeeController/list">Employee</a></h2>
 		<h2><a href="address/list">Address</a></h2>
 		<h2><a href="MoneyDetail/list">MoneyDetail</a></h2>

@@ -26,6 +26,18 @@
 		<servlet-name>studentServlet</servlet-name>
 		<url-pattern>/student/list</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>teamServlet</servlet-name>
+		<servlet-class>org.ecom.controller.TeamController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teamServlet</servlet-name>
+		<url-pattern>/team/list</url-pattern>
+	</servlet-mapping>
+	
+
+	
 
 	<servlet>
 		<servlet-name>employeeServlet</servlet-name>

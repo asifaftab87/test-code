@@ -19,6 +19,24 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>userServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletElhadj</servlet-name>
+		<url-pattern>/user/list/elhadj</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>teamServlet</servlet-name>
+		<servlet-class>org.ecom.controller.TeamController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teamServlet</servlet-name>
+		<url-pattern>/team/list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>studentServlet</servlet-name>
 		<servlet-class>org.ecom.controller.StudentController</servlet-class>
 	</servlet>

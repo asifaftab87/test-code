@@ -79,11 +79,8 @@ public class UserRepository {	//DAO Data Access Object
 			pStatement = con.prepareStatement(query);
 			pStatement.setLong(1, userId);
 			rs = pStatement.executeQuery();
-			
 			if(rs!=null) {
-				
 				while(rs.next())  {
-					  
 					user = new User();
 					user.setId(rs.getInt(1));
 					user.setFirstName(rs.getString(2));

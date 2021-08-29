@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.ecom.service.UserService;
+import org.ecom.asif.service.UserService;
 
 public class UserDeleteController extends HttpServlet {
 

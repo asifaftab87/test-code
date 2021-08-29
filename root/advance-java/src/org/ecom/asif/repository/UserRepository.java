@@ -1,4 +1,4 @@
-package org.ecom.repository;
+package org.ecom.asif.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,11 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import org.ecom.model.User;
+import org.ecom.asif.model.User;
 
 public class UserRepository {	//DAO Data Access Object
 
@@ -262,7 +260,6 @@ public class UserRepository {	//DAO Data Access Object
 		List<User> userList = new ArrayList<>();
 		String query = " select * from user1 where firstname like ? "; 
 					 
-		Map map = new HashMap<>();
 		ResultSet rs = null;
 		try(PreparedStatement pStatement = con.prepareStatement(query)) {
 			

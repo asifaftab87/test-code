@@ -1,4 +1,4 @@
-<%@page import="org.ecom.model.User"%>
+<%@page import="org.ecom.asif.model.User"%>
 <%@ include file="/WEB-INF/jsps/common/header.jsp" %> 
 <div class='text-center'>
 	<h1 class="display-1">User</h1>

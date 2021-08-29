@@ -10,13 +10,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.ecom.asif.model.User;
+import org.ecom.asif.service.UserService;
 import org.ecom.constant.ProjectConstants;
 import org.ecom.model.Address;
 import org.ecom.model.MoneyDetail;
-import org.ecom.model.User;
 import org.ecom.service.AddressService;
 import org.ecom.service.MoneyDetailService;
-import org.ecom.service.UserService;
 
 public class UserDetailController extends HttpServlet {
 

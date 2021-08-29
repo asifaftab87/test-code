@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.ecom.asif.model.User;
+import org.ecom.asif.service.UserService;
 import org.ecom.constant.ProjectConstants;
-import org.ecom.model.User;
-import org.ecom.service.UserService;
 
 public class UserUpdateController extends HttpServlet {
 
@@ -40,7 +40,7 @@ public class UserUpdateController extends HttpServlet {
 			System.out.println(e.getMessage());
 		}
 		
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "user-update.jsp";
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-update.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
 		
 		requestDispatcher.forward(request, response);
@@ -58,6 +58,7 @@ public class UserUpdateController extends HttpServlet {
 		String dobString = request.getParameter("dob");
 		String genderString = request.getParameter("gender");
 		String fatherName = request.getParameter("fatherName");
+		String country = request.getParameter("country");
 		
 		System.out.println("fatherName: "+fatherName);
 		System.out.println("firstName: "+firstName);
@@ -65,24 +66,19 @@ public class UserUpdateController extends HttpServlet {
 		System.out.println("email: "+email);
 		System.out.println("dob: "+dobString);
 		System.out.println("gender: "+genderString);
+		System.out.println("country: "+country);
 		
 		boolean gender = false;
 		if(genderString!=null) {
 			gender = Boolean.parseBoolean(genderString);
 		}
 		UserService userService = new UserService();
-		
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-		
 		Date dob = null;
-		
 		try {
-			
 			int userId = Integer.valueOf(userIdStr);
-			
 			dob = formatter.parse(dobString);
 	        System.out.println(dob);
-	         
 	        User user = new User();
 	        user.setId(userId);
 	 		user.setDob(dob);
@@ -91,6 +87,7 @@ public class UserUpdateController extends HttpServlet {
 	 		user.setFatherName(fatherName);
 	 		user.setGender(gender);
 	 		user.setEmail(email);
+	 		user.setCountry(country);
 	 		userService.updateUser(user);
         } 
 		catch (ParseException e) {
@@ -103,6 +100,6 @@ public class UserUpdateController extends HttpServlet {
 		userService.connectionClose();
 		
 		//to avoid form submission
-		response.sendRedirect("/advance-java/user/list");  
+		response.sendRedirect("/advance-java/user/list/asif");  
 	}
 }

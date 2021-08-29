@@ -8,7 +8,8 @@ create table user(
 	dob DATE,
 	email varchar(50) not null,
 	fatherName varchar(50),
-	gender tinyint(1)
+	gender tinyint(1),
+	country varchar(50)
 );
 
 

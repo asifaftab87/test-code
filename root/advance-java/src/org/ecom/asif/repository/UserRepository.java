@@ -1,4 +1,4 @@
-package org.ecom.repository;
+package org.ecom.asif.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,11 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import org.ecom.model.User;
+import org.ecom.asif.model.User;
 
 public class UserRepository {	//DAO Data Access Object
 
@@ -25,7 +23,7 @@ public class UserRepository {	//DAO Data Access Object
 		
 		try {
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from user");
+			rs = stmt.executeQuery("select * from user1");
 			
 			if(rs!=null) {
 				
@@ -77,7 +75,7 @@ public class UserRepository {	//DAO Data Access Object
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = " select * from user where id=? ";
+			String query = " select * from user1 where id=? ";
 			pStatement = con.prepareStatement(query);
 			pStatement.setLong(1, userId);
 			rs = pStatement.executeQuery();
@@ -94,6 +92,7 @@ public class UserRepository {	//DAO Data Access Object
 					user.setEmail(rs.getString(5));
 					user.setFatherName(rs.getString(6));
 					user.setGender(rs.getBoolean(7));
+					user.setCountry(rs.getString(8));
 				}
 			}
 		} 
@@ -132,7 +131,7 @@ public class UserRepository {	//DAO Data Access Object
 			//conversion from java.util.Date to java.sql.Date
 			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
 			
-			String query = 	  "INSERT INTO user(firstName, lastName, dob, email, fatherName, gender) "
+			String query = 	  "INSERT INTO user1(firstName, lastName, dob, email, fatherName, gender, country) "
 							+ " VALUES (?, ?, ?, ?, ?, ?, ?)";
 			pStatement = con.prepareStatement(query);
 			pStatement.setString(1, user.getFirstName());
@@ -180,8 +179,8 @@ public class UserRepository {	//DAO Data Access Object
 			//conversion from java.util.Date to java.sql.Date
 			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
 			
-			String query = 	  " update user set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
-							+ " where id=? ";
+			String query = 	  " update user1 set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
+							+ " , country=? where id=? ";
 			pStatement = con.prepareStatement(query);
 			pStatement.setString(1, user.getFirstName());
 			pStatement.setString(2, user.getLastName());
@@ -189,7 +188,8 @@ public class UserRepository {	//DAO Data Access Object
 			pStatement.setString(4, user.getEmail());
 			pStatement.setString(5, user.getFatherName());
 			pStatement.setBoolean(6, user.getGender());
-			pStatement.setInt(7, user.getId());
+			pStatement.setString(7, user.getCountry());
+			pStatement.setInt(8, user.getId());
 			
 			int executeUpdate = pStatement.executeUpdate();
 			
@@ -225,7 +225,7 @@ public class UserRepository {	//DAO Data Access Object
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = "delete from user where id=?";
+			String query = "delete from user1 where id=?";
 			pStatement = con.prepareStatement(query);
 			pStatement.setLong(1, userId);
 			executeUpdate = pStatement.executeUpdate();
@@ -258,9 +258,8 @@ public class UserRepository {	//DAO Data Access Object
 		
 		System.out.println("name: "+name);
 		List<User> userList = new ArrayList<>();
-		String query = " select * from user where firstname like ? "; 
+		String query = " select * from user1 where firstname like ? "; 
 					 
-		Map map = new HashMap<>();
 		ResultSet rs = null;
 		try(PreparedStatement pStatement = con.prepareStatement(query)) {
 			

@@ -11,11 +11,11 @@
 
 	<servlet>
 		<servlet-name>userServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>userServlet</servlet-name>
-		<url-pattern>/user/list</url-pattern>
+		<url-pattern>/user/list/asif</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -70,11 +70,11 @@
 
 	<servlet>
 		<servlet-name>deleteServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserDeleteController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserDeleteController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>deleteServlet</servlet-name>
-		<url-pattern>/user/delete</url-pattern>
+		<url-pattern>/user/delete/asif</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -108,11 +108,11 @@
 
 	<servlet>
 		<servlet-name>createServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserCreateController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserCreateController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>createServlet</servlet-name>
-		<url-pattern>/user/add</url-pattern>
+		<url-pattern>/user/add/asif</url-pattern>
 	</servlet-mapping>
 
 
@@ -149,12 +149,12 @@
 
 	<servlet>
 		<servlet-name>updateServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserUpdateController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserUpdateController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>updateServlet</servlet-name>
-		<url-pattern>/user/update</url-pattern>
+		<url-pattern>/user/update/asif</url-pattern>
 	</servlet-mapping>
 
 
@@ -190,12 +190,12 @@
 
 	<servlet>
 		<servlet-name>detailServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserDetailController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>detailServlet</servlet-name>
-		<url-pattern>/user/detail</url-pattern>
+		<url-pattern>/user/detail/asif</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -271,12 +271,12 @@
 
 	<servlet>
 		<servlet-name>userSearchServlet</servlet-name>
-		<servlet-class>org.ecom.controller.UserSearchController</servlet-class>
+		<servlet-class>org.ecom.asif.controller.UserSearchController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>userSearchServlet</servlet-name>
-		<url-pattern>/user/search</url-pattern>
+		<url-pattern>/user/search/asif</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

@@ -1,18 +1,27 @@
 <%@page import="org.ecom.model.User"%>
 <%@page import="java.util.List"%>
 <%@ include file="/WEB-INF/jsps/common/header.jsp" %> 
-<div class="backg-color">	
+	
 	
 	<div class='text-center'>
 		<h1 class="display-1">User</h1>
-		<h3><small class="text-muted">User List</small></h3>
+		<h3><medium class="text-muted">User List</medium></h3>
 	</div>
 	<div>
-		<form action="/advance-java/user/add/asif">
-			<div class="form-group mx-sm-3 mb-2 container">
-				<input type="submit" value="Add User" style="float: right;" class="btn btn-primary" />
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<a class="btn btn-outline-dark mx-3" href="/advance-java" role="button">Home</a>
+				</div>
+				<div class="col-sm">
+					<form action="/advance-java/user/add/asif">
+						<div class="form-group mx-sm-3 mb-2 container">
+							<input type="submit" value="Add User" style="float: right;" class="btn btn-primary" />
+						</div>
+					</form>
+				</div>
 			</div>
-		</form>
+		</div>
 	</div>
 	
 	<br />
@@ -37,7 +46,7 @@
 				<th scope="col">First Name</th>
 				<th scope="col">Email</th>
 				<th scope="col">Gender</th>
-				<th scope="col">Action</th>
+				<th scope="col"  class="pl-5">Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -55,8 +64,16 @@
 								<td><%= user.getEmail() %></td>
 								<td><%= user.getGender() ? "male" : "female" %></td>
 								<td>
-									<a href="/advance-java/user/delete/asif?userId=<%= user.getId() %>">Delete</a>
-									<a href="/advance-java/user/update/asif?userId=<%= user.getId() %>">Update</a>
+									<div class="row">
+										<div class="col-sm-3">
+											<a href="/advance-java/user/delete/asif?userId=<%= user.getId() %>" 
+												class="btn btn-danger">Delete</a>
+										</div>
+										<div class="col-sm-3">
+											<a href="/advance-java/user/update/asif?userId=<%= user.getId() %>"
+												class="btn btn-secondary">Update</a>
+										</div>
+									</div>
 								</td>
 							</tr>
 						<%
@@ -72,6 +89,6 @@
 			%>
 		<tbody>
 	</table>
-</div>
+
 <%@ include file="/WEB-INF/jsps/common/footer.jsp" %> 
 	

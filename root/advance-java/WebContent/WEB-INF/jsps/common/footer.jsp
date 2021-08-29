@@ -1,3 +1,4 @@
+	  </div>
 	  <!-- Footer -->
 	  <footer>
 	  	<div class="backg-color-rev">

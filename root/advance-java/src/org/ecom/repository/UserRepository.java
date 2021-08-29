@@ -94,6 +94,7 @@ public class UserRepository {	//DAO Data Access Object
 					user.setEmail(rs.getString(5));
 					user.setFatherName(rs.getString(6));
 					user.setGender(rs.getBoolean(7));
+					user.setCountry(rs.getString(8));
 				}
 			}
 		} 
@@ -181,7 +182,7 @@ public class UserRepository {	//DAO Data Access Object
 			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
 			
 			String query = 	  " update user1 set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
-							+ " where id=? ";
+							+ " , country=? where id=? ";
 			pStatement = con.prepareStatement(query);
 			pStatement.setString(1, user.getFirstName());
 			pStatement.setString(2, user.getLastName());
@@ -189,7 +190,8 @@ public class UserRepository {	//DAO Data Access Object
 			pStatement.setString(4, user.getEmail());
 			pStatement.setString(5, user.getFatherName());
 			pStatement.setBoolean(6, user.getGender());
-			pStatement.setInt(7, user.getId());
+			pStatement.setString(7, user.getCountry());
+			pStatement.setInt(8, user.getId());
 			
 			int executeUpdate = pStatement.executeUpdate();
 			

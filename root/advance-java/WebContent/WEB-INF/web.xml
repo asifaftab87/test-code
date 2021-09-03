@@ -23,7 +23,7 @@
 		<servlet-class>org.ecom.elhadj.controller.UserController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>userServletElhadj</servlet-name>
+		<servlet-name>userServlet</servlet-name>
 		<url-pattern>/user/list/elhadj</url-pattern>
 	</servlet-mapping>
 
@@ -82,6 +82,15 @@
 		<servlet-name>deleteServlet</servlet-name>
 		<url-pattern>/user/delete/asif</url-pattern>
 	</servlet-mapping>
+	<servlet>
+	
+		<servlet-name>deleteServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServlet</servlet-name>
+		<url-pattern>/user/delete/elhadj</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>employeeDeleteServlet</servlet-name>
@@ -121,6 +130,15 @@
 		<url-pattern>/user/add/asif</url-pattern>
 	</servlet-mapping>
 
+
+<servlet>
+		<servlet-name>createServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServlet</servlet-name>
+		<url-pattern>/user/add/elhadj</url-pattern>
+	</servlet-mapping>
 
 
 	<servlet>
@@ -164,6 +182,16 @@
 	</servlet-mapping>
 
 
+<servlet>
+		<servlet-name>updateServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserUpdateController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateServlet</servlet-name>
+		<url-pattern>/user/update/elhadj</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
 		<servlet-name>employeeUpdateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeUpdateController</servlet-class>
@@ -202,6 +230,16 @@
 	<servlet-mapping>
 		<servlet-name>detailServlet</servlet-name>
 		<url-pattern>/user/detail/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServlet</servlet-name>
+		<url-pattern>/user/detail/elhadj</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -283,6 +321,16 @@
 	<servlet-mapping>
 		<servlet-name>userSearchServlet</servlet-name>
 		<url-pattern>/user/search/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userSearchServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserSearchController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userSearchServlet</servlet-name>
+		<url-pattern>/user/search/elhadj</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

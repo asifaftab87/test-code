@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ecom.asif.model.User;
+import org.ecom.elhadj.model.User;
 
 public class UserRepository {  //DAO Data Access Object
 	
@@ -255,7 +255,7 @@ public class UserRepository {  //DAO Data Access Object
 		
 		System.out.println("name: "+name);
 		List<User> userList = new ArrayList<>();
-		String query = " select * from user1 where firstname like ? "; 
+		String query = " select * from user where firstname like ? "; 
 					 
 		ResultSet rs = null;
 		try(PreparedStatement pStatement = con.prepareStatement(query)) {

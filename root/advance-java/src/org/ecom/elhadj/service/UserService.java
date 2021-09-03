@@ -4,9 +4,10 @@ import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ecom.asif.model.User;
-import org.ecom.asif.repository.UserRepository;
+import org.ecom.elhadj.model.User;
+import org.ecom.elhadj.repository.UserRepository;
 import org.ecom.util.GetSqlConnection;
+
 
 public class UserService {
 	

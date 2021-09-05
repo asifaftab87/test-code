@@ -1,4 +1,4 @@
-package org.ecom.elhadj.repository;
+package org.ecom.asif.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,36 +8,34 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.ecom.elhadj.model.User;
+import org.ecom.asif.model.Employee;
 
-public class UserRepository {  //DAO Data Access Object
-	
-	public static List<User> getAllUser(Connection con) {
+public class EmployeeRepository {
 
-		System.out.println("-----------getAllUser------------");
+	public static List<Employee> getAllEmployee(Connection con) {
+
+		System.out.println("-----------getAllEmployee------------");
 		
 		Statement stmt = null;
 		ResultSet rs = null;
 
-		List<User> userList = new ArrayList<>();
+		List<Employee> employeeList = new ArrayList<>();
 		
 		try {
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from user1");
+			rs = stmt.executeQuery("select * from employee");
 			
 			if(rs!=null) {
 				
 				while(rs.next())  {
 					  
-					User user = new User();
-					user.setId(rs.getInt(1));
-					user.setFirstName(rs.getString(2));
-					user.setLastName(rs.getString(3));
-					user.setDob(rs.getDate(4));
-					user.setEmail(rs.getString(5));
-					user.setFatherName(rs.getString(6));
-					user.setGender(rs.getBoolean(7));
-					userList.add(user);
+					Employee employee = new Employee();
+					employee.setId(rs.getInt(1));
+					employee.setName(rs.getString(2));
+					employee.setAge(rs.getInt(3));
+					employee.setSalary(rs.getString(4));
+
+					employeeList.add(employee);
 				}
 				
 			}
@@ -63,33 +61,33 @@ public class UserRepository {  //DAO Data Access Object
 				e.printStackTrace();
 			}  
 		}
-		return userList;
+		return employeeList;
 	}
 	
-	public static User findUserById(Connection con, long userId) {
+	public static Employee findEmployeeById(Connection con, long employeeId) {
 
-		System.out.println("-----------findUserById userid: "+userId);
+		System.out.println("-----------findEmployeeById employeeid: "+employeeId);
 
 		ResultSet rs = null;
-		User user = null;
+		Employee employee = null;
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = " select * from user1 where id=? ";
+			String query = " select * from employee where id=? ";
 			pStatement = con.prepareStatement(query);
-			pStatement.setLong(1, userId);
+			pStatement.setLong(1, employeeId);
 			rs = pStatement.executeQuery();
+			
 			if(rs!=null) {
+				
 				while(rs.next())  {
-					user = new User();
-					user.setId(rs.getInt(1));
-					user.setFirstName(rs.getString(2));
-					user.setLastName(rs.getString(3));
-					user.setDob(rs.getDate(4));
-					user.setEmail(rs.getString(5));
-					user.setFatherName(rs.getString(6));
-					user.setGender(rs.getBoolean(7));
-					user.setCountry(rs.getString(8));
+					  
+					employee = new Employee();
+					employee.setId(rs.getInt(1));
+					employee.setName(rs.getString(2));
+					employee.setAge(rs.getInt(3));
+					employee.setSalary(rs.getString(4));
+
 				}
 			}
 		} 
@@ -114,31 +112,27 @@ public class UserRepository {  //DAO Data Access Object
 				e.printStackTrace();
 			}  
 		}
-		return user;
+		return employee;
 	}
 	
-	public static void createUser(Connection con, User user) {
+	public static void createEmployee(Connection con, Employee employee) {
 		
-		System.out.println("-----------createUser------------");
+		System.out.println("-----------createEmployee------------");
 		
 		PreparedStatement pStatement = null;
 		
 		try{  
 			
 			//conversion from java.util.Date to java.sql.Date
-			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
+			//java.sql.Date sqlDate = new java.sql.Date(employee.getDob().getTime());
 			
-			String query = 	  "INSERT INTO user1(firstName, lastName, dob, email, fatherName, gender, country) "
-							+ " VALUES (?, ?, ?, ?, ?, ?, ?)";
+			String query = 	  "INSERT INTO employee(name, age, salary) "
+							+ " VALUES (?, ?, ?)";
 			pStatement = con.prepareStatement(query);
-			pStatement.setString(1, user.getFirstName());
-			pStatement.setString(2, user.getLastName());
-			pStatement.setDate(3, sqlDate);
-			pStatement.setString(4, user.getEmail());
-			pStatement.setString(5, user.getFatherName());
-			pStatement.setBoolean(6, user.getGender());
-			pStatement.setString(7, user.getCountry());
-			
+			pStatement.setString(1, employee.getName());
+			pStatement.setInt(2, employee.getAge());
+			pStatement.setString(3, employee.getSalary());
+
 			int executeUpdate = pStatement.executeUpdate();
 			
 			if(executeUpdate>0) {
@@ -165,29 +159,24 @@ public class UserRepository {  //DAO Data Access Object
 		}
 	}
 	
-	public static void updateUser(Connection con, User user) {
+	public static void updateEmployee(Connection con, Employee employee) {
 		
-		System.out.println("-----------updateUser------------");
+		System.out.println("-----------updateEmployee------------");
 		
 		PreparedStatement pStatement = null;
 		
 		try{  
 			
 			//conversion from java.util.Date to java.sql.Date
-			java.sql.Date sqlDate = new java.sql.Date(user.getDob().getTime());
+		//	java.sql.Date sqlDate = new java.sql.Date(employee.getDob().getTime());
 			
-			String query = 	  " update user1 set firstName=?, lastName=?, dob=?, email=?, fatherName=?, gender=? "
-							+ " , country=? where id=? ";
+			String query = 	  " update employee set name=?, age=? , salary=?"
+							+ " where id=? ";
 			pStatement = con.prepareStatement(query);
-			pStatement.setString(1, user.getFirstName());
-			pStatement.setString(2, user.getLastName());
-			pStatement.setDate(3, sqlDate);
-			pStatement.setString(4, user.getEmail());
-			pStatement.setString(5, user.getFatherName());
-			pStatement.setBoolean(6, user.getGender());
-			pStatement.setString(7, user.getCountry());
-			pStatement.setInt(8, user.getId());
-			
+			pStatement.setString(1, employee.getName());
+			pStatement.setInt(2, employee.getAge());
+			pStatement.setString(3, employee.getSalary());
+
 			int executeUpdate = pStatement.executeUpdate();
 			
 			if(executeUpdate>0) {
@@ -214,17 +203,17 @@ public class UserRepository {  //DAO Data Access Object
 		}
 	}
 
-	public static int deleteUserById(Connection con, long userId) {
+	public static int deleteEmployeeById(Connection con, long employeeId) {
 
-		System.out.println("-----------deleteUserById userid: "+userId);
+		System.out.println("-----------deleteEmployeeById Employeeid: "+employeeId);
 		
 		int executeUpdate = 0;
 		PreparedStatement pStatement = null;
 		
 		try {
-			String query = "delete from user1 where id=?";
+			String query = "delete from employee where id=?";
 			pStatement = con.prepareStatement(query);
-			pStatement.setLong(1, userId);
+			pStatement.setLong(1, employeeId);
 			executeUpdate = pStatement.executeUpdate();
 			
 			if(executeUpdate>0) {
@@ -250,12 +239,12 @@ public class UserRepository {  //DAO Data Access Object
 		
 		return executeUpdate;
 	}
-	
-	public static List<User> getUserByName(Connection con, String name){
+
+	public static List<Employee> getEmployeeByName(Connection con, String name) {
 		
 		System.out.println("name: "+name);
-		List<User> userList = new ArrayList<>();
-		String query = " select * from user1 where firstname like ? "; 
+		List<Employee> employeeList = new ArrayList<>();
+		String query = " select * from employee where name like ? "; 
 					 
 		ResultSet rs = null;
 		try(PreparedStatement pStatement = con.prepareStatement(query)) {
@@ -266,15 +255,13 @@ public class UserRepository {  //DAO Data Access Object
 			
 			while(rs.next())  {
 				  
-				User user = new User();
-				user.setId(rs.getInt(1));
-				user.setFirstName(rs.getString(2));
-				user.setLastName(rs.getString(3));
-				user.setDob(rs.getDate(4));
-				user.setEmail(rs.getString(5));
-				user.setFatherName(rs.getString(6));
-				user.setGender(rs.getBoolean(7));
-				userList.add(user);
+				Employee employee = new Employee();
+				employee.setId(rs.getInt(1));
+				employee.setName(rs.getString(2));
+				employee.setAge(rs.getInt(3));
+				employee.setSalary(rs.getString(4));
+
+				employeeList.add(employee);
 			}
 		}
 		catch(Exception e) {
@@ -290,7 +277,7 @@ public class UserRepository {  //DAO Data Access Object
 				e.printStackTrace();
 			}  
 		}
-		return userList;
+		return employeeList;
 	}
-
+		
 }

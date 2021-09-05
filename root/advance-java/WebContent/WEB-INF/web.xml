@@ -19,11 +19,20 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<url-pattern>/employee/list/asif</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>userServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>userServlet</servlet-name>
+		<servlet-name>userServletElhadj</servlet-name>
 		<url-pattern>/user/list/elhadj</url-pattern>
 	</servlet-mapping>
 	
@@ -139,7 +148,6 @@
 		<url-pattern>/EmployeeTwo/Delete</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>createServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserCreateController</servlet-class>
@@ -147,6 +155,15 @@
 	<servlet-mapping>
 		<servlet-name>createServlet</servlet-name>
 		<url-pattern>/user/add/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<url-pattern>/employee/add/asif</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -159,12 +176,12 @@
 	</servlet-mapping>
 
 
-<servlet>
+	<servlet>
 		<servlet-name>createServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserCreateController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>createServlet</servlet-name>
+		<servlet-name>createServletElhadj</servlet-name>
 		<url-pattern>/user/add/elhadj</url-pattern>
 	</servlet-mapping>
 
@@ -365,13 +382,21 @@
 		<servlet-name>userSearchServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServlet</servlet-name>
 		<url-pattern>/user/search/asif</url-pattern>
 	</servlet-mapping>
 	
-		<servlet>
+	<servlet>
+		<servlet-name>employeeAsifSearchServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeAsifSearchServlet</servlet-name>
+		<url-pattern>/employee/search/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>userSearchServletNizam</servlet-name>
 		<servlet-class>org.ecom.nizam.controller.UserSearchController</servlet-class>
 	</servlet>

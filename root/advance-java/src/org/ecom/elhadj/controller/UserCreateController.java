@@ -24,7 +24,7 @@ public class UserCreateController  extends HttpServlet{
 
 		String destination = ProjectConstants.JSP_FOLDER_PATH + "elhadj/user-create.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
-		System.out.println("user add do get");
+		System.out.println("user add do get ...");
 		requestDispatcher.forward(request, response);
 	}
 	

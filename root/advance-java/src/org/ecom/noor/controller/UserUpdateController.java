@@ -1,7 +1,6 @@
-package org.ecom.asif.controller;
+package org.ecom.noor.controller;
 
 import java.io.IOException;
-
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,26 +12,47 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.ecom.asif.model.User;
-import org.ecom.asif.service.UserService;
+import org.ecom.noor.model.User;
+import org.ecom.noor.service.UserService;
 import org.ecom.constant.ProjectConstants;
 
-public class UserCreateController extends HttpServlet {
-
-	private static final long serialVersionUID = 6467649553058598678L;
+public class UserUpdateController extends HttpServlet {
+	
+	private static final long serialVersionUID = 8170467442791463622L;
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-create.jsp";
+		String userIdStr = request.getParameter("userId");
+		
+		System.out.println("user update do get userId: "+userIdStr);
+		
+		UserService userService = new UserService();
+		
+		try {
+			long userId = Long.valueOf(userIdStr);
+			User user = userService.findUserById(userId);
+			
+			if(user!=null) {
+				request.setAttribute("user", user);
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "noorain/user-update.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
-		System.out.println("user add do get");
+		
 		requestDispatcher.forward(request, response);
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		String userIdStr = request.getParameter("userId");
+		
+		System.out.println("user update do get userId: "+userIdStr);
 		String firstName = request.getParameter("fname");
 		String lName = request.getParameter("lname");
 		String email = request.getParameter("email");
@@ -45,7 +65,7 @@ public class UserCreateController extends HttpServlet {
 		System.out.println("firstName: "+firstName);
 		System.out.println("lName: "+lName);
 		System.out.println("email: "+email);
-		System.out.println("dob string: "+dobString);
+		System.out.println("dob: "+dobString);
 		System.out.println("gender: "+genderString);
 		System.out.println("country: "+country);
 		
@@ -54,13 +74,14 @@ public class UserCreateController extends HttpServlet {
 			gender = Boolean.parseBoolean(genderString);
 		}
 		UserService userService = new UserService();
-		
-		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		Date dob = null;
 		try {
+			int userId = Integer.valueOf(userIdStr);
 			dob = formatter.parse(dobString);
-	        System.out.println("dob in java.util.date format: "+dob);
+	        System.out.println(dob);
 	        User user = new User();
+	        user.setId(userId);
 	 		user.setDob(dob);
 	 		user.setFirstName(firstName);
 	 		user.setLastName(lName);
@@ -68,7 +89,7 @@ public class UserCreateController extends HttpServlet {
 	 		user.setGender(gender);
 	 		user.setEmail(email);
 	 		user.setCountry(country);
-	 		userService.createUser(user);
+	 		userService.updateUser(user);
         } 
 		catch (ParseException e) {
             e.printStackTrace();
@@ -80,7 +101,6 @@ public class UserCreateController extends HttpServlet {
 		userService.connectionClose();
 		
 		//to avoid form submission
-		response.sendRedirect("/advance-java/user/list/asif");  
+		response.sendRedirect("/advance-java/user/list/noorain");  
 	}
-	
 }

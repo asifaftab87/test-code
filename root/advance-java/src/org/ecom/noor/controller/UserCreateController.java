@@ -1,6 +1,9 @@
-package org.ecom.asif.controller;
+package org.ecom.noor.controller;
 
 import java.io.IOException;
+
+
+
 
 
 import java.text.ParseException;
@@ -13,18 +16,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.ecom.asif.model.User;
-import org.ecom.asif.service.UserService;
+import org.ecom.noor.model.User;
+import org.ecom.noor.service.UserService;
 import org.ecom.constant.ProjectConstants;
 
 public class UserCreateController extends HttpServlet {
-
+	
 	private static final long serialVersionUID = 6467649553058598678L;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-create.jsp";
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "noorain/user-create.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
 		System.out.println("user add do get");
 		requestDispatcher.forward(request, response);
@@ -80,7 +83,8 @@ public class UserCreateController extends HttpServlet {
 		userService.connectionClose();
 		
 		//to avoid form submission
-		response.sendRedirect("/advance-java/user/list/asif");  
+		response.sendRedirect("/advance-java/user/list/noorain");  
 	}
 	
+
 }

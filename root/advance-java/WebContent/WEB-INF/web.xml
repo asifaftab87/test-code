@@ -17,6 +17,15 @@
 		<servlet-name>userServlet</servlet-name>
 		<url-pattern>/user/list/asif</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<url-pattern>/employee/list/asif</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>userServletElhadj</servlet-name>
@@ -26,7 +35,25 @@
 		<servlet-name>userServletElhadj</servlet-name>
 		<url-pattern>/user/list/elhadj</url-pattern>
 	</servlet-mapping>
-
+	
+	<servlet>
+		<servlet-name>userServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletNoorain</servlet-name>
+		<url-pattern>/user/list/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserControllerNizaam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletNizam</servlet-name>
+		<url-pattern>/user/list/nizam</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>teamServlet</servlet-name>
 		<servlet-class>org.ecom.controller.TeamController</servlet-class>
@@ -82,7 +109,34 @@
 		<servlet-name>deleteServlet</servlet-name>
 		<url-pattern>/user/delete/asif</url-pattern>
 	</servlet-mapping>
-
+	
+	<servlet>
+		<servlet-name>deleteServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletNoorain</servlet-name>
+		<url-pattern>/user/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletNizam</servlet-name>
+		<url-pattern>/user/delete/nizam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>deleteServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServlet</servlet-name>
+		<url-pattern>/user/delete/elhadj</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>employeeDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeDeleteController</servlet-class>
@@ -120,9 +174,44 @@
 		<servlet-name>createServlet</servlet-name>
 		<url-pattern>/user/add/asif</url-pattern>
 	</servlet-mapping>
-
-
-
+	
+	<servlet>
+		<servlet-name>createServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletNoorain</servlet-name>
+		<url-pattern>/user/add/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<url-pattern>/employee/add/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletNizam</servlet-name>
+		<url-pattern>/user/add/nizam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletElhadj</servlet-name>
+		<url-pattern>/user/add/elhadj</url-pattern>
+	</servlet-mapping>
+	
+	
 	<servlet>
 		<servlet-name>employeeCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeCreateController</servlet-class>
@@ -162,7 +251,38 @@
 		<servlet-name>updateServlet</servlet-name>
 		<url-pattern>/user/update/asif</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserUpdateController</servlet-class>
+	</servlet>
 
+	<servlet-mapping>
+		<servlet-name>updateServletNoorain</servlet-name>
+		<url-pattern>/user/update/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserUpdateController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateServletNizam</servlet-name>
+		<url-pattern>/user/update/nizam</url-pattern>
+	</servlet-mapping>
+	
+	
+<servlet>
+		<servlet-name>updateServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserUpdateController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateServlet</servlet-name>
+		<url-pattern>/user/update/elhadj</url-pattern>
+	</servlet-mapping>
+	
 
 	<servlet>
 		<servlet-name>employeeUpdateServlet</servlet-name>
@@ -202,6 +322,35 @@
 	<servlet-mapping>
 		<servlet-name>detailServlet</servlet-name>
 		<url-pattern>/user/detail/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServletNoorain</servlet-name>
+		<url-pattern>/user/detail/noorain</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>detailServletNizam</servlet-name>
+		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServletNizam</servlet-name>
+		<url-pattern>/user/detail/nizam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServlet</servlet-name>
+		<url-pattern>/user/detail/elhadj</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
@@ -283,6 +432,45 @@
 	<servlet-mapping>
 		<servlet-name>userSearchServlet</servlet-name>
 		<url-pattern>/user/search/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeAsifSearchServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeAsifSearchServlet</servlet-name>
+		<url-pattern>/employee/search/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userSearchServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.UserSearchController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userSearchServletNoorain</servlet-name>
+		<url-pattern>/user/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userSearchServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserSearchController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userSearchServletNizam</servlet-name>
+		<url-pattern>/user/search/nizam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userSearchServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserSearchController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userSearchServlet</servlet-name>
+		<url-pattern>/user/search/elhadj</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

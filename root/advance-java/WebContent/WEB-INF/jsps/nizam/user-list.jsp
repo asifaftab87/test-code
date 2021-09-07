@@ -1,4 +1,4 @@
-<%@page import="org.ecom.elhadj.model.User"%>
+<%@page import="org.ecom.nizam.model.User"%>
 <%@page import="java.util.List"%>
 <%@ include file="/WEB-INF/jsps/common/header.jsp" %> 
 	
@@ -13,7 +13,7 @@
 				<a class="btn btn-outline-dark mx-3" href="/advance-java" role="button">Home</a>
 			</div>
 			<div class="col-sm">
-				<form action="/advance-java/user/add/elhadj">
+				<form action="/advance-java/user/add/nizam">
 					<div class="form-group mx-sm-3 mb-2 container">
 						<input type="submit" value="Add User" style="float: right;" class="btn btn-primary" />
 					</div>
@@ -27,7 +27,7 @@
 <br />
 
 <div>
-	<form action="/advance-java/user/search/elhadj" class="form-inline">
+	<form action="/advance-java/user/search/nizam" class="form-inline">
 		<div class="form-group mx-sm-3 mb-2 container">
 			<label for="name" class="mr-2">Search By Name</label>
 	    	<input type="text" class="form-control mx-2" id="name" placeholder="Enter Name" name="name" />
@@ -56,7 +56,7 @@
 					%>
 						<tr>
 							<td>
-								<a href="/advance-java/user/detail/elhadj?userId=<%= user.getId() %>">
+								<a href="/advance-java/user/detail/nizam?userId=<%= user.getId() %>">
 									<%= user.getFirstName() %>
 								</a>
 							</td>
@@ -65,11 +65,11 @@
 							<td>
 								<div class="row">
 									<div class="col-sm-3">
-										<a href="/advance-java/user/delete/elhadj?userId=<%= user.getId() %>" 
+										<a href="/advance-java/user/delete/nizam?userId=<%= user.getId() %>" 
 											class="btn btn-danger">Delete</a>
 									</div>
 									<div class="col-sm-3">
-										<a href="/advance-java/user/update/elhadj?userId=<%= user.getId() %>"
+										<a href="/advance-java/user/update/nizam?userId=<%= user.getId() %>"
 											class="btn btn-secondary">Update</a>
 									</div>
 								</div>

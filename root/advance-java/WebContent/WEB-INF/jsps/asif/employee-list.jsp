@@ -1,11 +1,11 @@
-<%@page import="org.ecom.elhadj.model.User"%>
-<%@page import="java.util.List"%>
-<%@ include file="/WEB-INF/jsps/common/header.jsp" %> 
-	
+<%@ page import="org.ecom.asif.model.Employee"%>
+<%@ page import="java.util.List"%>
+<%@ include file="/WEB-INF/jsps/common/header.jsp" %>
 <div class='text-center'>
-	<h1 class="display-1">User</h1>
-	<h3><medium class="text-muted">User List</medium></h3>
+	<h1 class="display-1">Employee</h1>
+	<h3><medium class="text-muted">Employee List</medium></h3>
 </div>
+
 <div>
 	<div class="container">
 		<div class="row">
@@ -13,9 +13,9 @@
 				<a class="btn btn-outline-dark mx-3" href="/advance-java" role="button">Home</a>
 			</div>
 			<div class="col-sm">
-				<form action="/advance-java/user/add/elhadj">
+				<form action="/advance-java/employee/add/asif">
 					<div class="form-group mx-sm-3 mb-2 container">
-						<input type="submit" value="Add User" style="float: right;" class="btn btn-primary" />
+						<input type="submit" value="Add Employee" style="float: right;" class="btn btn-primary" />
 					</div>
 				</form>
 			</div>
@@ -27,7 +27,7 @@
 <br />
 
 <div>
-	<form action="/advance-java/user/search/elhadj" class="form-inline">
+	<form action="/advance-java/employee/search/asif" class="form-inline">
 		<div class="form-group mx-sm-3 mb-2 container">
 			<label for="name" class="mr-2">Search By Name</label>
 	    	<input type="text" class="form-control mx-2" id="name" placeholder="Enter Name" name="name" />
@@ -42,34 +42,34 @@
 <table class="table table-hover">
 	<thead class="table-primary">
 		<tr>
-			<th scope="col">First Name</th>
-			<th scope="col">Email</th>
-			<th scope="col">Gender</th>
+			<th scope="col">Name</th>
+			<th scope="col">Age</th>
+			<th scope="col">Salary</th>
 			<th scope="col" lass="pl-5">Action</th>
 		</tr>
 	</thead>
 	<tbody>
 		<%
-			List<User> userList = (List<User>)request.getAttribute("userList");
-			if(!userList.isEmpty()){
-				for(User user : userList){
+		List<Employee> employeeList = (List<Employee>)request.getAttribute("employeeList");
+			if(!employeeList.isEmpty()){
+				for(Employee employee : employeeList){
 					%>
 						<tr>
 							<td>
-								<a href="/advance-java/user/detail/elhadj?userId=<%= user.getId() %>">
-									<%= user.getFirstName() %>
+								<a href="/advance-java/user/detail/asif?userId=<%= employee.getId() %>">
+									<%= employee.getName() %>
 								</a>
 							</td>
-							<td><%= user.getEmail() %></td>
-							<td><%= user.getGender() ? "male" : "female" %></td>
+							<td><%= employee.getAge() %></td>
+							<td><%= employee.getSalary() %></td>
 							<td>
 								<div class="row">
 									<div class="col-sm-3">
-										<a href="/advance-java/user/delete/elhadj?userId=<%= user.getId() %>" 
+										<a href="/advance-java/employee/delete/asif?userId=<%= employee.getId() %>" 
 											class="btn btn-danger">Delete</a>
 									</div>
 									<div class="col-sm-3">
-										<a href="/advance-java/user/update/elhadj?userId=<%= user.getId() %>"
+										<a href="/advance-java/employee/update/asif?userId=<%= employee.getId() %>"
 											class="btn btn-secondary">Update</a>
 									</div>
 								</div>
@@ -81,7 +81,7 @@
 			else{
 				%>
 					<tr>
-						<td colspan="4">No user found</td>
+						<td colspan="4">No employee found</td>
 					</tr>
 				<%
 			}
@@ -89,5 +89,4 @@
 	<tbody>
 </table>
 
-<%@ include file="/WEB-INF/jsps/common/footer.jsp" %> 
-	
+<%@ include file="/WEB-INF/jsps/common/footer.jsp" %>

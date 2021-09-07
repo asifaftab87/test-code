@@ -1,14 +1,9 @@
-package org.ecom.elhadj.model;
+package org.ecom.nizam.model;
 
-import java.io.Serializable;
 import java.util.Date;
 
-//model class
-public class User implements Serializable {
+public class User {
 
-	
-
-	private static final long serialVersionUID = -1582067386243719716L;
 
 	private int id;
 	private String firstName;
@@ -63,18 +58,18 @@ public class User implements Serializable {
 	public void setGender(boolean gender) {
 		this.gender = gender;
 	}
-	
 	public String getCountry() {
 		return country;
 	}
-
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
 
 	@Override
 	public String toString() {
 		return "id: "+id+"   firstName: "+firstName+"   lastName: "+lastName+"   dob: "+dob
 				+"   email: "+email+"   fatherName: "+fatherName+"   gender: "+gender+"   country: "+country;
 	}
+	
 }

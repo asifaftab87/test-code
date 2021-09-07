@@ -1,4 +1,4 @@
-package org.ecom.asif.controller;
+package org.ecom.nizam.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,22 +9,28 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.ecom.asif.model.User;
-import org.ecom.asif.service.UserService;
+import org.ecom.nizam.model.User;
+import org.ecom.nizam.service.UserService;
 import org.ecom.constant.ProjectConstants;
 
-public class UserSearchController extends HttpServlet {
+public class UserSearchController extends HttpServlet{
 
-	private static final long serialVersionUID = 8170467442791463622L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7951706227154277404L;
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String name = request.getParameter("name");
+		
 		System.out.println("search user by name: "+name);
+		
 		UserService userService = new UserService();
 		
 		try {
+			
 			List<User> userList = userService.getUserByName(name);
 			request.setAttribute("userList", userList);
 			userService.connectionClose();
@@ -33,11 +39,10 @@ public class UserSearchController extends HttpServlet {
 			System.out.println(e.getMessage());
 		}
 		
-		String destination = ProjectConstants.JSP_FOLDER_PATH + "asif/user-list.jsp";
+		String destination = ProjectConstants.JSP_FOLDER_PATH + "nizam/user-list.jsp";
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(destination);
 		
 		requestDispatcher.forward(request, response);
 	}
-	
 	
 }

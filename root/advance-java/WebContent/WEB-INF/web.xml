@@ -28,6 +28,15 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeAsifServlet</servlet-name>
+		<url-pattern>/employee/list/asif</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>userServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserController</servlet-class>
 	</servlet>
@@ -37,6 +46,7 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>userServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserController</servlet-class>
 	</servlet>
@@ -54,6 +64,16 @@
 		<url-pattern>/user/list/nizam</url-pattern>
 	</servlet-mapping>
 	
+=======
+		<servlet-name>userServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserControllerNizaam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletNizam</servlet-name>
+		<url-pattern>/user/list/nizam</url-pattern>
+	</servlet-mapping>
+
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 	<servlet>
 		<servlet-name>teamServlet</servlet-name>
 		<servlet-class>org.ecom.controller.TeamController</servlet-class>
@@ -111,6 +131,7 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>deleteServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserDeleteController</servlet-class>
 	</servlet>
@@ -137,6 +158,26 @@
 		<url-pattern>/user/delete/elhadj</url-pattern>
 	</servlet-mapping>
 	
+=======
+		<servlet-name>deleteServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletNizam</servlet-name>
+		<url-pattern>/user/delete/nizam</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	
+		<servlet-name>deleteServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServlet</servlet-name>
+		<url-pattern>/user/delete/elhadj</url-pattern>
+	</servlet-mapping>
+
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 	<servlet>
 		<servlet-name>employeeDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeDeleteController</servlet-class>
@@ -165,7 +206,6 @@
 		<url-pattern>/EmployeeTwo/Delete</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>createServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserCreateController</servlet-class>
@@ -176,6 +216,7 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>createServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserCreateController</servlet-class>
 	</servlet>
@@ -212,6 +253,36 @@
 	</servlet-mapping>
 	
 	
+=======
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<servlet-class>org.ecom.asif.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createEmployeeServlet</servlet-name>
+		<url-pattern>/employee/add/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletNizam</servlet-name>
+		<url-pattern>/user/add/nizam</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>createServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletElhadj</servlet-name>
+		<url-pattern>/user/add/elhadj</url-pattern>
+	</servlet-mapping>
+
+
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 	<servlet>
 		<servlet-name>employeeCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeCreateController</servlet-class>
@@ -253,11 +324,17 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>updateServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserUpdateController</servlet-class>
+=======
+		<servlet-name>updateServletNizam</servlet-name>
+		<servlet-class>org.ecom.nizam.controller.UserUpdateController</servlet-class>
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 	</servlet>
 
 	<servlet-mapping>
+<<<<<<< HEAD
 		<servlet-name>updateServletNoorain</servlet-name>
 		<url-pattern>/user/update/noorain</url-pattern>
 	</servlet-mapping>
@@ -283,6 +360,22 @@
 		<url-pattern>/user/update/elhadj</url-pattern>
 	</servlet-mapping>
 	
+=======
+		<servlet-name>updateServletNizam</servlet-name>
+		<url-pattern>/user/update/nizam</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>updateServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserUpdateController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateServlet</servlet-name>
+		<url-pattern>/user/update/elhadj</url-pattern>
+	</servlet-mapping>
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 
 	<servlet>
 		<servlet-name>employeeUpdateServlet</servlet-name>
@@ -325,6 +418,7 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>detailServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserDetailController</servlet-class>
 	</servlet>
@@ -334,6 +428,8 @@
 		<url-pattern>/user/detail/noorain</url-pattern>
 	</servlet-mapping>
 	<servlet>
+=======
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 		<servlet-name>detailServletNizam</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
 	</servlet>
@@ -428,7 +524,6 @@
 		<servlet-name>userSearchServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServlet</servlet-name>
 		<url-pattern>/user/search/asif</url-pattern>
@@ -444,6 +539,7 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserSearchController</servlet-class>
 	</servlet>
@@ -454,6 +550,8 @@
 	</servlet-mapping>
 	
 	<servlet>
+=======
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 		<servlet-name>userSearchServletNizam</servlet-name>
 		<servlet-class>org.ecom.nizam.controller.UserSearchController</servlet-class>
 	</servlet>

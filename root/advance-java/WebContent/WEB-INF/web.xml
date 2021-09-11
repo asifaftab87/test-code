@@ -419,7 +419,6 @@
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<url-pattern>/user/search/noorain</url-pattern>
@@ -439,7 +438,7 @@
 		<servlet-class>org.ecom.elhadj.controller.UserSearchController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>userSearchServlet</servlet-name>
+		<servlet-name>userSearchServletElhadj</servlet-name>
 		<url-pattern>/user/search/elhadj</url-pattern>
 	</servlet-mapping>
 

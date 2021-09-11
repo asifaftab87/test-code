@@ -28,8 +28,6 @@
 		<url-pattern>/employee/list/asif</url-pattern>
 	</servlet-mapping>
 
-
-
 	<servlet>
 		<servlet-name>userServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserController</servlet-class>
@@ -48,7 +46,6 @@
 		<url-pattern>/employee/list/elhadj</url-pattern>
 	</servlet-mapping>
      <servlet>
-<<<<<<< HEAD
 		<servlet-name>userServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserController</servlet-class>
 	</servlet>
@@ -65,9 +62,6 @@
 		<servlet-name>userServletNizam</servlet-name>
 		<url-pattern>/user/list/nizam</url-pattern>
 	</servlet-mapping>
-	
-
-
 
 	<servlet>
 		<servlet-name>teamServlet</servlet-name>
@@ -91,7 +85,6 @@
 		<servlet-name>employeeServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeServlet</servlet-name>
 		<url-pattern>/employeeController/list</url-pattern>
@@ -115,7 +108,6 @@
 		<url-pattern>/EmployeeTwo/list</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>deleteServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDeleteController</servlet-class>
@@ -126,7 +118,6 @@
 	</servlet-mapping>
 	
 	<servlet>
-
 		<servlet-name>deleteServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserDeleteController</servlet-class>
 	</servlet>
@@ -145,14 +136,28 @@
 	</servlet-mapping>
 	
 	<servlet>
+<<<<<<< HEAD
 	    <servlet-name>deleteServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserDeleteController</servlet-class>
 	</servlet>
 	<servlet-mapping>
+=======
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 		<servlet-name>deleteServletElhadj</servlet-name>
+<<<<<<< HEAD
+=======
+		<servlet-class>org.ecom.elhadj.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletElhadj</servlet-name>
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 		<url-pattern>/user/delete/elhadj</url-pattern>
 	</servlet-mapping>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 	<servlet>
 		<servlet-name>employeeDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeDeleteController</servlet-class>
@@ -175,7 +180,6 @@
 		<servlet-name>EmployeeTwoDeleteServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoDeleteController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoDeleteServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Delete</url-pattern>
@@ -191,7 +195,6 @@
 	</servlet-mapping>
 	
 	<servlet>
-
 		<servlet-name>createServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserCreateController</servlet-class>
 	</servlet>
@@ -217,6 +220,7 @@
 		<servlet-name>createServletNizam</servlet-name>
 		<url-pattern>/user/add/nizam</url-pattern>
 	</servlet-mapping>
+<<<<<<< HEAD
 	
 	<servlet>
 		<servlet-name>createServletElhadj</servlet-name>
@@ -253,6 +257,8 @@
 		<url-pattern>/user/add/nizam</url-pattern>
 	</servlet-mapping>
 
+=======
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 
 	<servlet>
 		<servlet-name>createServletElhadj</servlet-name>
@@ -263,13 +269,10 @@
 		<url-pattern>/user/add/elhadj</url-pattern>
 	</servlet-mapping>
 
-
-
 	<servlet>
 		<servlet-name>employeeCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeCreateServlet</servlet-name>
 		<url-pattern>/employeeCreateController/add</url-pattern>
@@ -279,7 +282,6 @@
 		<servlet-name>CreditCardCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardCreateServlet</servlet-name>
 		<url-pattern>/CreditCard/add</url-pattern>
@@ -289,7 +291,6 @@
 		<servlet-name>EmployeeTwoCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoCreateServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/add</url-pattern>
@@ -299,37 +300,38 @@
 		<servlet-name>updateServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>updateServlet</servlet-name>
 		<url-pattern>/user/update/asif</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-
 		<servlet-name>updateServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserUpdateController</servlet-class>
-
-		<servlet-name>updateServletNizam</servlet-name>
-		<servlet-class>org.ecom.nizam.controller.UserUpdateController</servlet-class>
-
 	</servlet>
-
 	<servlet-mapping>
-
 		<servlet-name>updateServletNoorain</servlet-name>
 		<url-pattern>/user/update/noorain</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>updateServletElhadj</servlet-name>
+		<servlet-class>org.ecom.elhadj.controller.UserUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateServletElhadj</servlet-name>
+		<url-pattern>/user/update/elhadj</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>updateServletNizam</servlet-name>
 		<servlet-class>org.ecom.nizam.controller.UserUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>updateServletNizam</servlet-name>
 		<url-pattern>/user/update/nizam</url-pattern>
 	</servlet-mapping>
+<<<<<<< HEAD
 	
 	
 <servlet>
@@ -357,12 +359,13 @@
 		<servlet-name>updateServletElhadj</servlet-name>
 		<url-pattern>/user/update/elhadj</url-pattern>
 	</servlet-mapping>
+=======
+>>>>>>> branch 'student-1' of https://github.com/asifaftab87/test-code.git
 
 	<servlet>
 		<servlet-name>employeeUpdateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeUpdateServlet</servlet-name>
 		<url-pattern>/employeeUpdateController/update</url-pattern>
@@ -372,7 +375,6 @@
 		<servlet-name>CreditCardUpdateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardUpdateServlet</servlet-name>
 		<url-pattern>/CreditCard/Update</url-pattern>
@@ -382,7 +384,6 @@
 		<servlet-name>EmployeeTwoUpdateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoUpdateServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Update</url-pattern>
@@ -392,14 +393,12 @@
 		<servlet-name>detailServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>detailServlet</servlet-name>
 		<url-pattern>/user/detail/asif</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-
 		<servlet-name>detailServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserDetailController</servlet-class>
 	</servlet>
@@ -408,13 +407,11 @@
 		<servlet-name>detailServletNoorain</servlet-name>
 		<url-pattern>/user/detail/noorain</url-pattern>
 	</servlet-mapping>
+	
 	<servlet>
-
-
 		<servlet-name>detailServletNizam</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>detailServletNizam</servlet-name>
 		<url-pattern>/user/detail/nizam</url-pattern>
@@ -424,7 +421,6 @@
 		<servlet-name>detailServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>detailServletElhaj</servlet-name>
 		<url-pattern>/user/detail/elhadj</url-pattern>
@@ -434,7 +430,6 @@
 		<servlet-name>moneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>moneyServlet</servlet-name>
 		<url-pattern>/MoneyDetail/list</url-pattern>
@@ -444,18 +439,15 @@
 		<servlet-name>delmoneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyDetailDeleteController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>delmoneyServlet</servlet-name>
 		<url-pattern>/MoneyDetail/delete</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>employeeDetailServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeDetailServlet</servlet-name>
 		<url-pattern>/employeeDetailController/detail</url-pattern>
@@ -465,7 +457,6 @@
 		<servlet-name>CreditCardDetailServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardDetailServlet</servlet-name>
 		<url-pattern>/CreditCard/Detail</url-pattern>
@@ -475,7 +466,6 @@
 		<servlet-name>EmployeeTwoDetailServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoDetailServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Detail</url-pattern>
@@ -485,7 +475,6 @@
 		<servlet-name>createmoneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyDetailCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>createmoneyServlet</servlet-name>
 		<url-pattern>/MoneyDetail/add</url-pattern>
@@ -495,7 +484,6 @@
 		<servlet-name>updmoneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyDetailUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>updmoneyServlet</servlet-name>
 		<url-pattern>/MoneyDetail/update</url-pattern>
@@ -520,23 +508,18 @@
 	</servlet-mapping>
 	
 	<servlet>
-
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<url-pattern>/user/search/noorain</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-
-
 		<servlet-name>userSearchServletNizam</servlet-name>
 		<servlet-class>org.ecom.nizam.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServletNizam</servlet-name>
 		<url-pattern>/user/search/nizam</url-pattern>
@@ -546,7 +529,6 @@
 		<servlet-name>userSearchServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>userSearchServletElhadj</servlet-name>
 		<url-pattern>/user/search/elhadj</url-pattern>
@@ -565,7 +547,6 @@
 		<servlet-name>employeeSearchServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>employeeSearchServlet</servlet-name>
 		<url-pattern>/employeeSearchController/search</url-pattern>
@@ -575,7 +556,6 @@
 		<servlet-name>CreditCardSearchServlet</servlet-name>
 		<servlet-class>org.ecom.controller.CreditCardSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>CreditCardSearchServlet</servlet-name>
 		<url-pattern>/CreditCard/Search</url-pattern>
@@ -585,7 +565,6 @@
 		<servlet-name>EmployeeTwoSearchServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoNameController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoSearchServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Name</url-pattern>
@@ -595,7 +574,6 @@
 		<servlet-name>EmployeeTwoDobServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoDobController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoDobServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Dob</url-pattern>
@@ -605,7 +583,6 @@
 		<servlet-name>EmployeeTwoEmailServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoEmailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoEmailServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Email</url-pattern>
@@ -615,7 +592,6 @@
 		<servlet-name>EmployeeTwoGenderServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoGenderController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoGenderServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Gender</url-pattern>
@@ -625,7 +601,6 @@
 		<servlet-name>EmployeeTwoJoinedDateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoJoinedDateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoJoinedDateServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/JoinedDate</url-pattern>
@@ -635,17 +610,15 @@
 		<servlet-name>EmployeeTwoReleaseDateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoReleaseDateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoReleaseDateServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/ReleaseDate</url-pattern>
 	</servlet-mapping>
 	
-		<servlet>
+	<servlet>
 		<servlet-name>EmployeeTwoNoticeperiodServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeTwoNoticeperiodController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoNoticeperiodServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Noticeperiod</url-pattern>
@@ -655,7 +628,6 @@
 		<servlet-name>EmpFiveServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveServlet</servlet-name>
 		<url-pattern>/Employeefive/list</url-pattern>
@@ -665,18 +637,15 @@
 		<servlet-name>detailEmpFiveServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveDetailController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>detailEmpFiveServlet</servlet-name>
 		<url-pattern>/Employeefive/detail</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>EmpFiveSearchServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchServlet</servlet-name>
 		<url-pattern>/Employeefive/search</url-pattern>
@@ -686,7 +655,6 @@
 		<servlet-name>EmpFiveUpdateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveUpdateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveUpdateServlet</servlet-name>
 		<url-pattern>/Employeefive/update</url-pattern>
@@ -696,7 +664,6 @@
 		<servlet-name>EmpFiveCreateServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveCreateController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveCreateServlet</servlet-name>
 		<url-pattern>/Employeefive/add</url-pattern>
@@ -706,7 +673,6 @@
 		<servlet-name>EmpFiveSearchAgeServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByAgeController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchAgeServlet</servlet-name>
 		<url-pattern>/Employeefive/searchAge</url-pattern>
@@ -716,18 +682,15 @@
 		<servlet-name>EmpFiveSearchJoinedServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByJoinedController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchJoinedServlet</servlet-name>
 		<url-pattern>/Employeefive/searchJoined</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>EmpFiveSearchReleaseServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByReleaseController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchReleaseServlet</servlet-name>
 		<url-pattern>/Employeefive/searchRelease</url-pattern>
@@ -737,7 +700,6 @@
 		<servlet-name>EmpFiveSearchEmailServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByEmailIdController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchEmailServlet</servlet-name>
 		<url-pattern>/Employeefive/searchEmail</url-pattern>
@@ -747,7 +709,6 @@
 		<servlet-name>EmpFiveSearchPeriodServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByNotPeriodController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchPeriodServlet</servlet-name>
 		<url-pattern>/Employeefive/searchPeriod</url-pattern>
@@ -757,7 +718,6 @@
 		<servlet-name>EmpFiveSearchGenderServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeefiveSearchByGenderController</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>EmpFiveSearchGenderServlet</servlet-name>
 		<url-pattern>/Employeefive/searchGender</url-pattern>

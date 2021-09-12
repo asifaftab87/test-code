@@ -330,7 +330,7 @@
 		<servlet-class>org.ecom.elhadj.controller.UserDetailController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>detailServlet</servlet-name>
+		<servlet-name>detailServletElhadj</servlet-name>
 		<url-pattern>/user/detail/elhadj</url-pattern>
 	</servlet-mapping>
 

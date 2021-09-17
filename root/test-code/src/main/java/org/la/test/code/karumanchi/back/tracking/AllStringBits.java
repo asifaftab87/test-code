@@ -1,6 +1,5 @@
 package org.la.test.code.karumanchi.back.tracking;
 
-import org.apache.juli.logging.LogFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

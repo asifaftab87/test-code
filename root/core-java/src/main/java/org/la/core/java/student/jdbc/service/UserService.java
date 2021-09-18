@@ -2,16 +2,16 @@ package org.la.core.java.student.jdbc.service;
 
 import org.la.core.java.student.jdbc.model.User;
 import org.la.core.java.student.jdbc.respository.UserRepository;
+import org.la.core.java.student.jdbc.util.DateUtil;
 
-import java.sql.Connection;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class UserService {
 
     public List<User> findByDob(Calendar calendar) throws Exception {
-        return UserRepository.findByDob(calendar);
+        int years = DateUtil.findAgeByDOB(calendar);
+        return UserRepository.findByAge(years);
     }
 
     public List<User> findByAge(int age) throws Exception {

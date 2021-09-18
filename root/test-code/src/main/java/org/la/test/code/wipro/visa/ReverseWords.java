@@ -21,7 +21,7 @@ public class ReverseWords {
     }
 
     public static void main(String[] args) {
-        
+
         String src = "Hello world how are you";
         char[] arr = src.toCharArray();
         reverse(arr, 0, arr.length-1);

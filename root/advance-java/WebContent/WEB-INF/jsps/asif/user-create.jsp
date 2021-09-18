@@ -36,7 +36,7 @@
 	</div>
 	<div class="form-group">
 		<label for="datepicker">Date Of Birth</label>
-		<input type="text" name="dob" class="form-control" name="datepicker" id="datepicker" aria-describedby="datepickerHelp" placeholder="Enter Dob">
+		<input type="text" name="dob" class="form-control" id="datepicker" aria-describedby="datepickerHelp" placeholder="Enter Dob">
 		<small id="datepickerHelp" class="form-text text-muted">
 			Please provide dob
 		</small>
@@ -68,9 +68,10 @@
 	    <option value="yemen">Yemen</option>
 	    <option value="syria">Syria</option>
 	    <option value="saudi">Saudi</option>
+	    <option value="nigeria">Nigeria</option>
       </select>
     </div>
-  	<input type="button" value="Submit" onclick="submitForm();" class="btn btn-primary">
+  	<input type="submit" value="Submit" class="btn btn-primary">
   	<a class="btn btn-dark mx-3" href="/advance-java/user/list/asif" role="button">Cancel</a>
 </form> 
 

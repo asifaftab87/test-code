@@ -1,6 +1,8 @@
 package org.ecom.asif.controller;
 
 import java.io.IOException;
+
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -54,13 +56,10 @@ public class UserCreateController extends HttpServlet {
 		UserService userService = new UserService();
 		
 		SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
-		
 		Date dob = null;
-		
 		try {
 			dob = formatter.parse(dobString);
-	        System.out.println(dob);
-	         
+	        System.out.println("dob in java.util.date format: "+dob);
 	        User user = new User();
 	 		user.setDob(dob);
 	 		user.setFirstName(firstName);
@@ -70,7 +69,6 @@ public class UserCreateController extends HttpServlet {
 	 		user.setEmail(email);
 	 		user.setCountry(country);
 	 		userService.createUser(user);
-	 		
         } 
 		catch (ParseException e) {
             e.printStackTrace();

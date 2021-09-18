@@ -1,6 +1,7 @@
 package org.ecom.asif.model;
 
 import java.io.Serializable;
+
 import java.util.Date;
 
 //model class

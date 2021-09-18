@@ -21,13 +21,10 @@ public class UserSearchController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String name = request.getParameter("name");
-		
 		System.out.println("search user by name: "+name);
-		
 		UserService userService = new UserService();
 		
 		try {
-			
 			List<User> userList = userService.getUserByName(name);
 			request.setAttribute("userList", userList);
 			userService.connectionClose();

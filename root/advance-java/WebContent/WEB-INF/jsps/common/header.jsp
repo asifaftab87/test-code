@@ -33,7 +33,7 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="/advance-java/user/list/asif">User</a>
-		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="/advance-java/employee/list/asif">Employee</a>
 		          <a class="dropdown-item" href="#">Something else here</a>
 		        </div>
 		      </li>
@@ -92,9 +92,10 @@
 		          Elhadj
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <a class="dropdown-item" href="#">Something else here</a>
+		          <a class="dropdown-item" href="/advance-java/user/list/elhadj">User</a>
+		          <a class="dropdown-item" href="/advance-java/employee/list/elhadj">Employee</a>
+		          <a class="dropdown-item" href="/advance-java/student/list/elhadj">Student</a>
+		          <a class="dropdown-item" href="/advance-java/worker/list/elhadj">Worker</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown active">
@@ -102,7 +103,7 @@
 		          Jamal
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">User</a>
 		          <a class="dropdown-item" href="#">Another action</a>
 		          <a class="dropdown-item" href="#">Something else here</a>
 		        </div>

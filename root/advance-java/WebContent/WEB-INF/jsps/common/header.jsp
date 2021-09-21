@@ -103,8 +103,8 @@
 		          Jamal
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">User</a>
-		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="/advance-java/user/list/jamal">User</a>
+		          <a class="dropdown-item" href="/advance-java/employee/list/jamal">Employee</a>
 		          <a class="dropdown-item" href="#">Something else here</a>
 		        </div>
 		      </li>

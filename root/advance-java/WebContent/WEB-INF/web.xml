@@ -28,6 +28,14 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>userServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletJamal</servlet-name>
+		<url-pattern>/user/list/jamal</url-pattern>
+	</servlet-mapping>
+	<servlet>
 		<servlet-name>userServlettahir</servlet-name>
 		<servlet-class>org.ecom.tahir.controller.UserController</servlet-class>
 	</servlet>
@@ -107,6 +115,15 @@
 		<servlet-name>EmployeeTwoServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/list</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeServletJamal</servlet-name>
+		<url-pattern>/employee/list/jamal</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>deleteServlet</servlet-name>
@@ -134,6 +151,15 @@
 	<servlet-mapping>
 		<servlet-name>deleteServletNoorain</servlet-name>
 		<url-pattern>/user/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletJamal</servlet-name>
+		<url-pattern>/user/delete/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -180,6 +206,15 @@
 		<servlet-name>EmployeeTwoDeleteServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Delete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeDeleteServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeDeleteServletJamal</servlet-name>
+		<url-pattern>/employee/Delete/jamal</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>createServlet</servlet-name>
@@ -210,12 +245,30 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>createServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletJamal</servlet-name>
+		<url-pattern>/user/add/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>createEmployeeServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.EmployeeCreateController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>createEmployeeServlet</servlet-name>
 		<url-pattern>/employee/add/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeCreateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeCreateServletJamal</servlet-name>
+		<url-pattern>/employee/add/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -291,6 +344,15 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>updateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateServletJamal</servlet-name>
+		<url-pattern>/user/update/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>updateServletElhadj</servlet-name>
 		<servlet-class>org.ecom.elhadj.controller.UserUpdateController</servlet-class>
 	</servlet>
@@ -334,6 +396,17 @@
 		<servlet-name>EmployeeTwoUpdateServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Update</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeUpdateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeUpdateServletJamal</servlet-name>
+		<url-pattern>/employee/Update/jamal</url-pattern>
+	</servlet-mapping>
+	
+	
 
 	<servlet>
 		<servlet-name>detailServlet</servlet-name>
@@ -352,6 +425,16 @@
 	<servlet-mapping>
 		<servlet-name>detailServletNoorain</servlet-name>
 		<url-pattern>/user/detail/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServletJamal</servlet-name>
+		<url-pattern>/user/detail/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -425,6 +508,15 @@
 		<servlet-name>EmployeeTwoDetailServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Detail</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeDetailServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeDetailServletJamal</servlet-name>
+		<url-pattern>/employee/Detail/jamal</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>createmoneyServlet</servlet-name>
@@ -469,6 +561,15 @@
 	<servlet-mapping>
 		<servlet-name>userSearchServletNoorain</servlet-name>
 		<url-pattern>/user/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userSearchServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userSearchServletJamal</servlet-name>
+		<url-pattern>/user/search/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -523,6 +624,15 @@
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoSearchServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Name</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeSearchServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeNameController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeSearchServletJamal</servlet-name>
+		<url-pattern>/employee/Name/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

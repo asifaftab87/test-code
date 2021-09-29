@@ -3,6 +3,7 @@ package org.ecom.noor.model;
 import java.io.Serializable;
 
 
+
 import java.util.Date;
 
 //model class

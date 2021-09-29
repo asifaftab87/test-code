@@ -26,6 +26,61 @@
 		<servlet-name>employeeAsifServlet</servlet-name>
 		<url-pattern>/employee/list/asif</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeNoorServlet</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeNoorServlet</servlet-name>
+		<url-pattern>/employee/list/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServletJamal</servlet-name>
+		<url-pattern>/user/list/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userServlettahir</servlet-name>
+		<servlet-class>org.ecom.tahir.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userServlettahir</servlet-name>
+		<url-pattern>/user/list/tahir</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cityNoorServlet</servlet-name>
+		<servlet-class> org.ecom.noor.controller.CityController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cityNoorServlet</servlet-name>
+		<url-pattern>/city/list/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>companyNoorServlet</servlet-name>
+		<servlet-class> org.ecom.noor.controller.CompanyController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>companyNoorServlet</servlet-name>
+		<url-pattern>/company/list/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>brandNoorServlet</servlet-name>
+		<servlet-class> org.ecom.noor.controller.BrandController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>brandNoorServlet</servlet-name>
+		<url-pattern>/brand/list/noorain</url-pattern>
+	</servlet-mapping>
+	
 
 	<servlet>
 		<servlet-name>userServletElhadj</servlet-name>
@@ -100,6 +155,15 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>EmployeeServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeListController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeServletJamal</servlet-name>
+		<url-pattern>/employee/list/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>deleteServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDeleteController</servlet-class>
 	</servlet>
@@ -109,12 +173,66 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>deleteServlettahir</servlet-name>
+		<servlet-class>org.ecom.tahir.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServlettahir</servlet-name>
+		<url-pattern>/user/delete/tahir</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>deleteServletNoorain</servlet-name>
 		<servlet-class>org.ecom.noor.controller.UserDeleteController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>deleteServletNoorain</servlet-name>
 		<url-pattern>/user/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServletJamal</servlet-name>
+		<url-pattern>/user/delete/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteEmployeeServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteEmployeeServletNoorain</servlet-name>
+		<url-pattern>/employee/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteCompanyServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CompanyDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteCompanyServletNoorain</servlet-name>
+		<url-pattern>/company/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteCityServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CityDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteCityServletNoorain</servlet-name>
+		<url-pattern>/city/delete/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteBrandServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.BrandDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteBrandServletNoorain</servlet-name>
+		<url-pattern>/brand/delete/noorain</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -163,12 +281,30 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>EmployeeDeleteServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeDeleteServletJamal</servlet-name>
+		<url-pattern>/employee/Delete/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>createServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserCreateController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>createServlet</servlet-name>
 		<url-pattern>/user/add/asif</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createServlettahir</servlet-name>
+		<servlet-class>org.ecom.asif.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServlettahir</servlet-name>
+		<url-pattern>/user/add/tahir</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -179,7 +315,61 @@
 		<servlet-name>createServletNoorain</servlet-name>
 		<url-pattern>/user/add/noorain</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createServletJamal</servlet-name>
+		<url-pattern>/user/add/jamal</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>EmployeeCreateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeCreateServletJamal</servlet-name>
+		<url-pattern>/employee/add/jamal</url-pattern>
+	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>createCityServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CityCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createCityServletNoorain</servlet-name>
+		<url-pattern>/city/add/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createEmployeeServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createEmployeeServletNoorain</servlet-name>
+		<url-pattern>/employee/add/noorain</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>createBrandServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.BrandCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createBrandServletNoorain</servlet-name>
+		<url-pattern>/brand/add/noorain</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>createCompanyServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CompanyCreateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createCompanyServletNoorain</servlet-name>
+		<url-pattern>/company/add/noorain</url-pattern>
+	</servlet-mapping>
 	<servlet>
 		<servlet-name>createEmployeeServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.EmployeeCreateController</servlet-class>
@@ -234,6 +424,17 @@
 		<url-pattern>/EmployeeTwo/add</url-pattern>
 	</servlet-mapping>
 
+
+	
+	<servlet>
+		<servlet-name>updateServlettahir</servlet-name>
+		<servlet-class>org.ecom.tahir.controller.UserUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateServlettahir</servlet-name>
+		<url-pattern>/user/update/asif</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>updateServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserUpdateController</servlet-class>
@@ -250,6 +451,52 @@
 	<servlet-mapping>
 		<servlet-name>updateServletNoorain</servlet-name>
 		<url-pattern>/user/update/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateServletJamal</servlet-name>
+		<url-pattern>/user/update/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateEmployeeServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeUpdateContollerNoor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateEmployeeServletNoorain</servlet-name>
+		<url-pattern>/employee/update/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateCompanyServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CompanyUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateCompanyServletNoorain</servlet-name>
+		<url-pattern>/company/update/noorain</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>updateCityServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CityUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateCityServletNoorain</servlet-name>
+		<url-pattern>/city/update/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateBrandServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.BrandUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateBrandServletNoorain</servlet-name>
+		<url-pattern>/brand/update/noorain</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -298,6 +545,15 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>EmployeeUpdateServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeUpdateServletJamal</servlet-name>
+		<url-pattern>/employee/Update/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>detailServlet</servlet-name>
 		<servlet-class>org.ecom.asif.controller.UserDetailController</servlet-class>
 	</servlet>
@@ -314,6 +570,56 @@
 	<servlet-mapping>
 		<servlet-name>detailServletNoorain</servlet-name>
 		<url-pattern>/user/detail/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailServletJamal</servlet-name>
+		<url-pattern>/user/detail/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailEmployeeServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailEmployeeServletNoorain</servlet-name>
+		<url-pattern>/employee/detail/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailCityServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CityDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailCityServletNoorain</servlet-name>
+		<url-pattern>/city/detail/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailCompanyServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CompanyDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailCompanyServletNoorain</servlet-name>
+		<url-pattern>/company/detail/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>detailBrandServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.BrandDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>detailBrandServletNoorain</servlet-name>
+		<url-pattern>/brand/detail/noorain</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -334,6 +640,15 @@
 		<url-pattern>/user/detail/elhadj</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>detailServlettahir</servlet-name>
+		<servlet-class>org.ecom.tahir.controller.UserDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>detailServlettahir</servlet-name>
+		<url-pattern>/user/detail/tahir</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>moneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyController</servlet-class>
@@ -380,6 +695,15 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>EmployeeDetailServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeDetailServletJamal</servlet-name>
+		<url-pattern>/employee/Detail/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>createmoneyServlet</servlet-name>
 		<servlet-class>org.ecom.controller.MoneyDetailCreateController</servlet-class>
 	</servlet>
@@ -425,6 +749,51 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>userSearchServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.UserSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userSearchServletJamal</servlet-name>
+		<url-pattern>/user/search/jamal</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>employeeSearchServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.EmployeeSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>employeeSearchServletNoorain</servlet-name>
+		<url-pattern>/employee/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>companySearchServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CompanySearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>companySearchServletNoorain</servlet-name>
+		<url-pattern>/company/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>brandSearchServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.BrandSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>brandSearchServletNoorain</servlet-name>
+		<url-pattern>/brand/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>CitySearchServletNoorain</servlet-name>
+		<servlet-class>org.ecom.noor.controller.CitySearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CitySearchServletNoorain</servlet-name>
+		<url-pattern>/city/search/noorain</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>userSearchServletNizam</servlet-name>
 		<servlet-class>org.ecom.nizam.controller.UserSearchController</servlet-class>
 	</servlet>
@@ -442,6 +811,15 @@
 		<url-pattern>/user/search/elhadj</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>userSearchServlettahir</servlet-name>
+		<servlet-class>org.ecom.tahir.controller.UserSearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userSearchServlettahir</servlet-name>
+		<url-pattern>/user/search/tahir</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>employeeSearchServlet</servlet-name>
 		<servlet-class>org.ecom.controller.EmployeeSearchController</servlet-class>
@@ -467,6 +845,15 @@
 	<servlet-mapping>
 		<servlet-name>EmployeeTwoSearchServlet</servlet-name>
 		<url-pattern>/EmployeeTwo/Name</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeSearchServletJamal</servlet-name>
+		<servlet-class>org.ecom.jamal.controller.EmployeeNameController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeSearchServletJamal</servlet-name>
+		<url-pattern>/employee/Name/jamal</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

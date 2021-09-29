@@ -52,9 +52,11 @@
 		          Noorain
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <a class="dropdown-item" href="#">Something else here</a>
+		           <a class="dropdown-item" href="/advance-java/user/list/noorain">User</a>
+		           <a class="dropdown-item" href="/advance-java/employee/list/noorain">Employee</a>
+		           <a class="dropdown-item" href="/advance-java/city/list/noorain">City</a>
+		           <a class="dropdown-item" href="/advance-java/city/list/noorain">Company</a>
+		           <a class="dropdown-item" href="/advance-java/city/list/noorain">Brand</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown active">
@@ -103,8 +105,8 @@
 		          Jamal
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">User</a>
-		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="/advance-java/user/list/jamal">User</a>
+		          <a class="dropdown-item" href="/advance-java/employee/list/jamal">Employee</a>
 		          <a class="dropdown-item" href="#">Something else here</a>
 		        </div>
 		      </li>

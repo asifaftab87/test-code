@@ -23,6 +23,8 @@ public class InsertionPrice {
     }
     public static void main(String[] args) {
         Price[] priceArr = getAgeArray(7);
+        Integer i[] = {1, 2, 3, 4};
+        sort(i);
         sort(priceArr);
         Arrays.stream(priceArr).forEach(System.out::println);
     }

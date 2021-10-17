@@ -32,6 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 
+
+### Liferay ###
 **/*.iml
 **/.ivy
 **/.classpath

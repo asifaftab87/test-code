@@ -76,3 +76,11 @@ create table employeefive(
 
 INSERT INTO db1.address (userid, street, city, state, country, pincode) VALUES (13, 'loha pool', 'kolkata', 'wb', 'india', '700019');
 
+
+
+CREATE TABLE `studentdb`.`balance` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `amount` DECIMAL(10,6) NULL,
+  `active` TINYINT NULL,
+  PRIMARY KEY (`id`)
+ );

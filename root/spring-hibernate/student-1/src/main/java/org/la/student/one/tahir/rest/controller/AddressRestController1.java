@@ -1,10 +1,11 @@
-package org.la.student.one.asif.rest.controller;
+package org.la.student.one.tahir.rest.controller;
 
 import java.util.List;
 
 
-import org.la.student.one.asif.model.Address;
-import org.la.student.one.asif.service.AddressService;
+
+import org.la.student.one.tahir.model.Address;
+import org.la.student.one.tahir.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,9 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
+
 @RestController
 @RequestMapping("/address")
-public class AddressRestController {
+public class AddressRestController1 {
 
 	@Autowired
 	private AddressService addressService;

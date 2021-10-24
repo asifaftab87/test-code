@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BalanceRepository  extends JpaRepository<Balance, Long>{
 
-	public List<Balance> findByName(String name);
+
 }

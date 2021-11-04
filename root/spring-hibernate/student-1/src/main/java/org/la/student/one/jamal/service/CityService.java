@@ -8,7 +8,7 @@ import org.la.student.one.jamal.repository.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("jamalCityService")
 public class CityService {
 	
 	@Autowired

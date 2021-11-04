@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
-@RequestMapping("/room")
+@RequestMapping("/room1")
 public class RoomRestController {
 	
 
@@ -29,6 +29,11 @@ public class RoomRestController {
 	@GetMapping("/findById/{id}")
 	public Room findById(@PathVariable("id") long id) {
 		return roomService.findById(id);
+	}
+	
+	@GetMapping("/findByFloorNum/{floorNum}")
+	public Room findByFloorNum(@PathVariable("floorNum") String floorNum) {
+		return (Room) roomService.findByFloorNum(floorNum);
 	}
 
 	@PostMapping("/create")

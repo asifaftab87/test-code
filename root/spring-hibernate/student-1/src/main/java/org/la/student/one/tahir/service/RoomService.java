@@ -30,9 +30,9 @@ public class RoomService {
 			
 	}
 	
-	public List<Room> findByFloorNum(String name){
+	public List<Room> findByFloorNum(String floorNum){
 		
-		return roomRepository.findByFloorNum(name);
+		return roomRepository.findByFloorNum(floorNum);
 	}
 	
 	public Room create(Room room) {

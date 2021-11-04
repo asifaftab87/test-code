@@ -29,9 +29,9 @@ public class BrandsService {
 			
 	}
 	
-	public List<Brands> findByFirstName(String name){
+	public List<Brands> findByBrandName(String name){
 		
-		return brandsRepository.findByBrandsName(name);
+		return brandsRepository.findByBrandName(name);
 	}
 	
 	public Brands create(Brands brands) {

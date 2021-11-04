@@ -5,9 +5,10 @@ import java.util.List;
 import org.la.student.one.jamal.model.Suppliers ;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.web.bind.annotation.RestController;
 
 
-
+@RestController("jamalSuppliersRepository")
 public interface SuppliersRepository extends JpaRepository<Suppliers, Long> {
 	
 	public List<Suppliers> findByContactFName(String name);

@@ -12,7 +12,7 @@ import org.la.student.one.tahir.repository.BalanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("tahirBalanceService")
 public class BalanceService {
 
 	@Autowired

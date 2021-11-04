@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BrandsRepository  extends JpaRepository<Brands, Long>{
 
-	public List<Brands> findByBrandsName(String name);
+	public List<Brands> findByBrandName(String name);
 }

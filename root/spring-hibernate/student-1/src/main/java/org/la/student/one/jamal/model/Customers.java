@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Entity
+@Entity(name= "customers1")
 @Table(name= "customers")
 public class Customers implements Serializable {
 	

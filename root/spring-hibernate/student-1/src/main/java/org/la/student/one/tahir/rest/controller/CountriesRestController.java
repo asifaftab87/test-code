@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
-@RequestMapping("/countries")
+@RequestMapping("/countries1")
 public class CountriesRestController {
 	
 

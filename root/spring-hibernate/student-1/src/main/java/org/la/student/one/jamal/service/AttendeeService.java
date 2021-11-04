@@ -4,15 +4,15 @@ import java.util.List;
 import java.util.Optional;
 
 import org.la.student.one.jamal.model.Attendee;
-import org.la.student.one.jamal.repository.AttendeeRepository;
+import org.la.student.one.jamal.repository.AttendeeRepositoryJamal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("jamalAttendeeService")
 public class AttendeeService {
 	
 	@Autowired
-	private AttendeeRepository attendeeRepository;
+	private AttendeeRepositoryJamal attendeeRepository;
 	
 	
 	public Attendee findById(Long id) {

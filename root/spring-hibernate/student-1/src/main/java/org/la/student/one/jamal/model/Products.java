@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-@Entity
+@Entity(name= "products1")
 @Table(name= "products")
 public class Products implements Serializable {
 	

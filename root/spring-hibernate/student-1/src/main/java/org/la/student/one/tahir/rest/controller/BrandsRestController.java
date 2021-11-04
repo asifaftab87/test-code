@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController 
-@RequestMapping("/brands")
+@RestController ("tahirBrandsRestController")
+@RequestMapping("/brands1")
 public class BrandsRestController {
 	
 

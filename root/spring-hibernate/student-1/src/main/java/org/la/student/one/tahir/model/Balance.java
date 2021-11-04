@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 
 
-@Entity
+@Entity(name = "company1")
 @Table(name = "company")
 public class Balance implements Serializable{
 

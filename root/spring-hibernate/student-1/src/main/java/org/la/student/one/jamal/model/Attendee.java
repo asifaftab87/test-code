@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity(name="attendee1")
 @Table(name= "attendee")
 public class Attendee implements Serializable {
 	

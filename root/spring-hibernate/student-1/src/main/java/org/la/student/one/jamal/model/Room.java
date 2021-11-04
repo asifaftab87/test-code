@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity(name= "room1")
 @Table(name= "room")
 public class Room implements Serializable {
 	
@@ -18,13 +18,13 @@ public class Room implements Serializable {
 	@Column(name="id")
 	private Long id;
 	
-	@Column(name="roomId")
+	@Column(name="room_id")
 	private Long roomId;
 	
-	@Column (name="floorNum")
+	@Column (name="floor_num")
 	private Long floorNum;
 	
-	@Column (name="seatCapacity")
+	@Column (name="seat_capacity")
 	private Long seatCapacity;
 
 	public Long getId() {

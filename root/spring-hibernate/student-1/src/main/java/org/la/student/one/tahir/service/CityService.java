@@ -29,9 +29,9 @@ public class CityService {
 			
 	}
 	
-	public List<City> findByFirstName(String name){
+	public List<City> findByCity(String name){
 		
-		return cityRepository.findByName(name);
+		return cityRepository.findByCity(name);
 	}
 	
 	public City create(City city) {

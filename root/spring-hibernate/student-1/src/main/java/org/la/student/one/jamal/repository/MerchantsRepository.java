@@ -6,10 +6,10 @@ import org.la.student.one.jamal.model.Merchants;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Repository;
 
 
-@RestController("jamaMerchantsRepository")
+@Repository("jamaMerchantsRepository")
 public interface MerchantsRepository extends JpaRepository<Merchants, Long> {
 	
 	public List<Merchants> findByMerchantName(String name);

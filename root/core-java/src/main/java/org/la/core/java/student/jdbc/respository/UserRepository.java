@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class UserRepository {
@@ -194,6 +195,10 @@ public class UserRepository {
             ConnectionUtil.closeConnection();
         }
         return userList;
+    }
+    
+    public static List<User> findByDob(Calendar calendar) throws Exception {
+    	return null;
     }
 
 }

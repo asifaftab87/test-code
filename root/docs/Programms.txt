@@ -97,6 +97,20 @@
 86. Program to read the current date and time
 87. Program to read all files from current directory
 ------------------------------------------------------
+create an arraylist of integer n prints its value
+create an arraylist of character n prints its value
+create an arraylist of Double n prints its value
+create an arraylist of Float n prints its value
+create an arraylist of integer n copy its value to other arraylist
+create an arraylist of character n copy its value to other arraylist
+create an arraylist of Double n copy its value to other arraylist
+create an arraylist of Float n copy its value to other arraylist
+create an arraylist of integer n add value using for loop
+create an arraylist of String n copy value from an string array of hard coded value
+copy two difference String arraylist into one arraylist
+WAP to print array using for, while and do while loop?
+WAP to print array in reverse order using for, while and do while loop?
+Wap print string in reverse e.g world to dlrow?
 
 4. Program to check the number is strong number or not.
 main()

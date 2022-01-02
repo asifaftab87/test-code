@@ -19,9 +19,9 @@
 		<thead>
 			            <tr>
 			                <th>Id</th>
-			                <th>amount</th>
-			                <th>active</th>
-			                <th>status</th>
+			                <th>Amount</th>
+			                <th>Active</th>
+			                <th>Status</th>
 			            </tr>
 			        </thead>
 		<tr>

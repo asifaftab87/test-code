@@ -37,7 +37,7 @@ public class BalanceController {
 		mav.addObject("message", "hello world");
 		
 		//consuming rest services/end point/rest api
-		balanceDto = restTemplate.getForObject("http://localhost:9191/student/balance/findById/1?spend=10", BalanceDTO.class);
+		balanceDto = restTemplate.getForObject("http://localhost:9191/student/balance/findById/1?spend=100", BalanceDTO.class);
 		mav.addObject("balanceDto", balanceDto);
         return mav;
     }

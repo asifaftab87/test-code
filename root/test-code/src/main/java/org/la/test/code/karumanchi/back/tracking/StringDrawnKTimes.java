@@ -9,11 +9,9 @@ public class StringDrawnKTimes {
 
     static final Logger log = LoggerFactory.getLogger(AllStringBits.class);
 
-    static int a[] = new int[3];
+    static int a[] = new int[2];
 
     public static void main(String[] args) {
-
-        int k = 1;
         takenKTimes(a.length, 3);
     }
 

@@ -9,7 +9,7 @@ public class AllStringBits {
 
     static final Logger log = LoggerFactory.getLogger(AllStringBits.class);
 
-    static int a[] = new int[3];
+    static int a[] = new int[2];
     public static void main(String[] args) {
 
         binary(a.length);

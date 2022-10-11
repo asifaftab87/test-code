@@ -20,7 +20,16 @@ public class MinimumBribes {
                 System.out.println("Too chaotic");
                 return;
             }
+            int start = Math.max(o-2, 0);
+            for (int x=start ; x<i ; x++) {
+                int k = q.get(x);
+                if (k>o) {
+                    bribes += 1;
+                }
+            }
+            i++;
         }
+        System.out.println(bribes);
     }
     public static void minimumBribes2(List<Integer> q) {
         int swap = 0;

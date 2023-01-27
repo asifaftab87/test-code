@@ -32,14 +32,19 @@ public class RearrangeAdjacentNoSameChar {
     }
 
     public static String reArrangeNoAdjacent(Map<Character, Integer> map, String ms) {
-        int mLen = ms.length();
         PriorityQueue<Pair> priorityQueue = new PriorityQueue<>();
         map.forEach((k, v) -> priorityQueue.add(new Pair(k, v)));
+
+        // Frequency sorted in descending order if the highest frequency is one its mean that a char max
+        // frequency is 1 and no need to change string
         int value = priorityQueue.peek().getFrequency();
         if (value==1) {
             return ms;
         }
-        if (value > (mLen + 1)/2) {
+
+        // If number of characters is higher than the half of length of the string then it not possible
+        // that adjacent char not same
+        if (value > (ms.length() + 1)/2) {
             return "NO SOLUTION";
         }
         StringBuilder sb = new StringBuilder();

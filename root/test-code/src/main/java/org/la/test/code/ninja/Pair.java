@@ -11,6 +11,7 @@ public class Pair implements Comparable<Pair> {
     }
 
     @Override
+    /** We are sorting Pair using frequency in descending order */
     public int compareTo(Pair pair) {
         return -this.frequency.compareTo(pair.getFrequency());
     }

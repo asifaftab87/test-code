@@ -1,11 +1,25 @@
 package org.la.test.code.strng.test;
 
 import org.junit.Test;
+import org.la.test.code.strng.ReverseStringSpecialCharIntact;
+import org.la.test.code.strng.StringMethods;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class StringTestClass {
+
+    @Test
+    public void ReverseStringSpecialCharIntactOne() {
+        String src = "Muba$r$rak#s1s+";
+        String res = new ReverseStringSpecialCharIntact().reverseStringSpecialCharIntact(src);
+        assertEquals("s1sk$a$rra#buM+", res);
+    }
+
+    @Test
+    public void StringMethodsStartsWith() {
+        assertTrue(StringMethods.startsWith("mohammadasifaftab", "asif", 8));
+    }
+
     @Test
     public void givenUsingString_whenInstantiatingString_thenWrong() {
         CharSequence firstString = "baeldung";

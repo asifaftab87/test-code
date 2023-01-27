@@ -1,6 +1,6 @@
 package org.la.test.code.hackr.rank;
 
-public class Test {
+public class SampleExample {
 
     public static void main(String[] args) {
         try{

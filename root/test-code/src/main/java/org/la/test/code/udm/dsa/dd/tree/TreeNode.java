@@ -1,9 +1,11 @@
 package org.la.test.code.udm.dsa.dd.tree;
 
 public class TreeNode {
+
     private int data;
     private TreeNode rightChild;
     private TreeNode leftChild;
+
     public TreeNode(int d) {
         data = d;
     }

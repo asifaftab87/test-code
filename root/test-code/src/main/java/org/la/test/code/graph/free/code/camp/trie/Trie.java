@@ -27,10 +27,8 @@ public class Trie {
             } else {
                 current = current.map.get(ch);
             }
-
         }
-//        current.map.get(word.charAt(word.length()-1)).isWord = true;
-        current.isWord = true;
+//        current.isWord = true;
     }
 
     public void display(TrieNode current, StringBuilder sb) {

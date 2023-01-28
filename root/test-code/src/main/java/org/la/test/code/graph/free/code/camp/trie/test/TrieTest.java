@@ -13,7 +13,12 @@ public class TrieTest {
         trie.insert("anil");
         trie.insert("amit");
         trie.insert("akif");
-//        trie.insert("ahnaf");
+        trie.insert("akifa");
+        trie.insert("akifaa");
+        trie.insert("zain");
+        trie.insert("kunal");
+        trie.insert("ahnaf");
+        trie.insert("khaimoo");
         trie.display(trie.getRoot(), new StringBuilder(""));
         assertTrue(true);
     }

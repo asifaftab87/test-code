@@ -1,6 +1,6 @@
 package org.la.test.code.graph.free.code.camp.trie;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class TrieNode {
@@ -9,7 +9,7 @@ public class TrieNode {
     public boolean isWord;
 
     public TrieNode() {
-        map = new LinkedHashMap<>();
+        map = new HashMap<>();
         isWord = false;
     }
 
